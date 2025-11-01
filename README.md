@@ -1,4 +1,1 @@
 # frontend-refresh-journey
-
-
-Hi...
