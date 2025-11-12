@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relative links and Internal/Anchor link  </title>
+</head>
+<body>
+
+    <h3>Example for Relative links</h3>
+
+    <a href="about.html">Go to About page</a>
+    <a href="contactus.html">Go to Contact us page</a>
+
+    <!-- Notes: Relative Links
+
+        1) A relative link connects pages within the same website or project folder.
+
+        2) It uses a file path instead of a full web address (no https://).
+
+        3) The browser looks for the target file relative to the current page’s location.
+
+        4) Folder Structure Example:
+            my-site/
+            ├─ index.html
+            ├─ about.html
+            └─ pages/
+            └─ contact.html
+
+        5) Examples:
+        - Same folder → href="about.html"
+        - Inside a subfolder → href="pages/contact.html"
+        - Go back to parent folder → href="../index.html"
+
+        6) './' means the current folder (optional).
+        Example: href="./about.html"
+
+        7) '/' at the start means root-relative link.
+        Example: href="/contact.html" (starts from website root)
+
+        8) Relative links make your site portable — they still work even if moved to a new domain.
+
+        9) Best Practices:
+            - Keep folder structure simple.
+            - Use clear and meaningful filenames.
+            - Test all links after creating them.
+            - Use relative links for internal pages only.
+        -->
+
+
+</body>
+</html>

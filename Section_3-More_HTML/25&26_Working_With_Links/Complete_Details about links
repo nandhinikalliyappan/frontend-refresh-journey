@@ -1,0 +1,64 @@
+All about links
+
+Absolute Vs Relative Vs internal
+
+<!-- Notes: Difference between Absolute, Relative, and Internal Links
+
+1️⃣ Absolute Links
+------------------
+→ Used to connect to external websites (outside your project).
+→ Always include the full URL (with https:// or http://).
+→ Example: <a href="https://www.google.com">Google</a>
+
+💡 Points:
+- Opens a page from another domain.
+- Useful for social links, references, or external sources.
+- If you move your website to another domain, these links still work.
+- You can use target="_blank" to open them in a new tab.
+
+------------------------------------------------------------
+
+2️⃣ Relative Links
+------------------
+→ Used to connect pages within the same website or project folder.
+→ Uses a file path instead of the full web address.
+
+Examples:
+- <a href="about.html">About</a> (same folder)
+- <a href="pages/contact.html">Contact</a> (subfolder)
+- <a href="../index.html">Home</a> (parent folder)
+
+💡 Points:
+- Depends on the folder structure of your project.
+- Makes your website portable — links still work even if moved to a new domain.
+- Used only for internal navigation (within your website).
+
+------------------------------------------------------------
+
+3️⃣ Internal (Anchor) Links
+----------------------------
+→ Used to jump to a specific section within the same page.
+
+Examples:
+- Add an id: <h2 id="contact">Contact</h2>
+- Create a link: <a href="#contact">Go to Contact</a>
+
+💡 Points:
+- Used for “Back to Top” links or navigation on long pages.
+- Helps improve user experience and accessibility.
+- You can also link to an element on another page:
+  <a href="about.html#team">Meet the Team</a>
+
+------------------------------------------------------------
+
+🧠 Summary Table
+
+| Type        | Connects To                  | Example / href                | Includes full URL? | Used For                |
+|--------------|------------------------------|-------------------------------|--------------------|--------------------------|
+| Absolute     | External websites             | https://www.google.com        | ✅ Yes              | Other websites           |
+| Relative     | Pages in same website         | about.html                    | ❌ No               | Internal navigation      |
+| Internal     | Elements within same page     | #section1                     | ❌ No               | In-page navigation       |
+
+-->
+
+
