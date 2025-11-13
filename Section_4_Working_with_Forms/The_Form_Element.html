@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>text element</title>
+</head>
+<body>
+    <h2>Form Controls</h2>
+    <form action="http://www.google.com">
+    <input type="text">
+    <button type = "submit">submit</button>  
+    </form>
+    <!-- Notes on <form> Tag:
+
+        1) The <form> tag is used to create a section in a webpage that collects user input.
+
+        2) It acts like a container that holds input fields, dropdowns, checkboxes, buttons, and other form elements.
+
+        3) A form doesn’t do anything on its own — it just defines *where* and *how* to send the collected data.
+
+        4) The 'action' attribute tells the browser where to send the form data.
+        Example: action="submit.html" → sends data to that page.
+
+        5) The 'method' attribute defines how the data is sent:
+        - GET → Data is visible in the URL (used for simple searches)
+        - POST → Data is hidden and sent securely (used for login, signup, etc.)
+
+        6) When the user clicks the submit button, the browser collects all the form data 
+        (based on each element’s “name” attribute) and sends it to the server.
+
+        7) Example:
+        <form action="/signup" method="post">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="username">
+            <button type="submit">Submit</button>
+        </form>
+
+        8) The server then receives this data and processes it — for example, saving it in a database.
+
+        9) Forms are the main way users interact with websites — for example:
+        - Search bars
+        - Login / Registration pages
+        - Feedback forms
+        - Payment forms
+
+        10) Always use proper labels and input types for accessibility and better user experience.
+
+        -->
+
+
+</body>
+</html>
