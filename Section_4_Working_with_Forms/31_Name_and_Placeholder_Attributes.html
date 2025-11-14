@@ -10,5 +10,41 @@
     <input type="text" name="username" placeholder="Firstname">
     <button>Submit</button>
     </Form>
+     
+     <!-- Notes on 'placeholder' and 'name' attributes
+
+        1) placeholder:
+        - The 'placeholder' attribute displays a short hint or example text inside the input box.
+        - It disappears when the user starts typing.
+        - It helps users understand what kind of input is expected.
+        - Example:
+            <input type="text" placeholder="Enter your name">
+        - This does not replace labels — it’s just a visual hint for users.
+
+        2) name:
+        - The 'name' attribute gives each form field a unique name.
+        - When the form is submitted, the 'name' is used as the key to identify the value entered.
+        - Example:
+            <input type="text" name="username" placeholder="Enter your name">
+        - When submitted:
+            → The browser sends data like username=John (key=value format)
+        - The server uses this 'name' to access the user’s input.
+        - Without a 'name' attribute, the input’s data will NOT be sent to the server.
+
+        3) Example together:
+        <form action="/signup" method="post">
+            <input type="email" name="userEmail" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+
+        - Here, 'placeholder' shows a hint to the user.
+        - 'name' helps the server identify that this input corresponds to the user's email.
+
+        4) In short:
+        - placeholder → user guidance
+        - name → data identification for backend
+        -->
+
+
 </body>
 </html>
