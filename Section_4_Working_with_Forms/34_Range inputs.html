@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Range inuts</title>
+</head>
+<body>
+    <p>Examle for range inputs</p>
+    <Form>
+    <label for="voulume">Set up a range for volume</label>
+    <input type="range" min="0" max="10" name="voulume">
+    </Form> 
+
+     <!-- Notes on Range Input (<input type="range">):
+
+        1) The range input creates a slider control that lets the user select
+        a numeric value within a specific range.
+
+        2) It is useful for:
+            - Volume control
+            - Brightness level
+            - Price filters
+            - Any adjustable numeric value
+
+        3) Important attributes:
+            • min → lowest value allowed
+            • max → highest value allowed
+            • value → starting/default position of the slider
+            • step → intervals between values (optional)
+
+        Example:
+            <input type="range" min="0" max="100" value="50" step="10">
+
+        4) The 'name' attribute is required if you want to submit the slider value in a form.
+        Example:
+            <input type="range" name="volume" min="0" max="100">
+
+        5) When the form is submitted, the slider sends the selected number like:
+            volume=70
+
+        6) Browsers display it as a horizontal slider by default, but you can style it using CSS.
+
+        7) Range inputs do NOT show the numeric value by default — you must add
+        a label or JS if you want live value display (optional).
+
+        8) Works only with numeric values.
+        -->
+
+
+</body>
+</html>

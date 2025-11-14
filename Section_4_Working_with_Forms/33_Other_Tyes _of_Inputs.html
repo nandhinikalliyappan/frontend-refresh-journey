@@ -18,5 +18,36 @@
     <button>Submit</button>
     </form>
     
+    <!-- Notes on the 'required' attribute:
+
+        1) The 'required' attribute is used inside form inputs to make the field mandatory.
+
+        2) If a field has 'required', the user cannot submit the form until that field is filled.
+
+        3) This is handled by the browser — no JavaScript needed.
+
+        4) If the user tries to submit without entering anything,
+        the browser will show a built-in error message.
+
+        5) It improves form validation and user experience.
+
+        6) Works with most input types:
+            <input type="text" required>
+            <input type="email" required>
+            <input type="password" required>
+
+        7) Example:
+            <form>
+                <input type="email" name="userEmail" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+
+        8) Important:
+        - The 'required' attribute does not check the correctness of the data (only empty or not).
+        - To check correct format (like email), you need the right input type (e.g., type="email").
+
+        -->
+
+
 </body>
 </html>
