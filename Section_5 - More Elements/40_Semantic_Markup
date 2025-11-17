@@ -1,0 +1,87 @@
+
+✅ Semantic Markup — Notes
+---------------------------
+
+1) What is Semantic Markup?
+Semantic markup means using HTML elements that clearly describe their meaning and purpose.
+These elements tell both the browser and the developer what the content represents, not just how it looks.
+Examples:
+<header>, <nav>, <main>, <section>, <article>, <footer>
+
+2) Why Semantic Elements Were Introduced?
+
+a) To give meaning to the layout
+Old HTML used <div> everywhere. Semantic elements add meaning:
+<header> → top section
+<nav> → navigation links
+<main> → main content
+<footer> → bottom section
+
+b) To improve accessibility
+Screen readers can understand the structure better.
+They can announce:
+“Navigation region”, “Main content”, “Footer section”.
+
+c) To improve SEO (Search Engine Optimization)
+Search engines understand your content better when you use semantic tags.
+This helps with ranking and indexing.
+
+d) To reduce div soup
+Before semantic HTML, developers used <div> for everything:
+<div id="header"></div>
+<div id="content"></div>
+<div id="footer"></div>
+
+This caused clutter and confusion.
+Semantic elements make HTML cleaner and more readable.
+
+e) To standardize webpage structure
+Semantic elements provide a consistent structure that all developers follow.
+This makes code easier to understand and maintain.
+
+3) Examples of Semantic Elements
+
+
+<header> → introduction, logo, navigation
+
+
+<nav> → menu links
+
+
+<main> → main content
+
+
+<section> → grouped content
+
+
+<article> → independent content (blog posts, news, cards)
+
+
+<aside> → sidebar content
+
+
+<footer> → ending section of the page
+
+
+
+4) Simple Example
+<header>
+    <h1>My Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <article>
+        <h2>Blog Post</h2>
+        <p>This is my article section.</p>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 MySite</p>
+</footer>
+
