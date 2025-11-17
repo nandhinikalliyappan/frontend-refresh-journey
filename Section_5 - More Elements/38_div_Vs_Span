@@ -1,0 +1,41 @@
+Can we use <div> instead of <span>?
+
+Technically yes, the browser will accept it.
+But practically and semantically, NO — it is incorrect.
+
+Why <div> should NOT replace <span>:
+
+1) <div> is block-level:
+   - Starts on a new line
+   - Takes full width
+   - Breaks the text flow
+   - Disrupts the layout
+
+   Example (bad):
+   My favorite color is 
+   <div>red</div>
+   (This breaks the sentence.)
+
+2) <span> is inline:
+   - Stays in the same line
+   - Fits naturally inside a sentence
+   - Does not break layout
+
+   Example (correct):
+   My favorite color is <span>red</span>.
+
+3) <div> is meant for large sections:
+   - Grouping big blocks of content
+   - Creating layout structures
+   - Wrapping containers
+
+   It is NOT meant for styling a single word or phrase.
+
+4) Using <div> for small inline text creates messy HTML
+   → This is called "div soup".
+
+Correct Usage Summary:
+- To style a word/phrase → use <span>.
+- To group large sections → use <div>.
+- For layouts/containers → use <div>.
+- For highlighting inline text → use <span>.
