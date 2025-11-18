@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Styles</title>
+    <!--Example for internal styling-->
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        p {
+            color: red;
+            font-size: 18px;
+        }
+
+        .highlight {
+
+            background-color: beige;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Website</h1>
+
+    <p>This paragraph is styled using internal CSS.</p>
+
+    <p class="highlight">This text has a yellow background.</p>
+
+    <!-- Internal Styling Notes:
+
+        Internal styling means writing CSS inside the <style> tag within the <head> section of an HTML file.
+
+
+        This method is useful when:
+        - You want to style a single page only.
+        - You need more control and cleaner code compared to inline styles.
+
+        Advantages:
+        - Keeps HTML cleaner than inline styling.
+        - Easy to update styles for the whole page in one place.
+
+        Limitations:
+        - Styles apply only to that specific page.
+        - Not ideal for large websites with many pages.
+
+        Best practice:
+        Use internal CSS for small standalone pages, and external CSS for bigger projects.
+
+    -->
+
+</body>
+
+</html>
