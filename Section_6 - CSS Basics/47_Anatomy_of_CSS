@@ -1,0 +1,30 @@
+Anatomy of a CSS Rule
+---------------------
+A CSS rule is made up of three parts:
+
+selector {
+    property: value;
+}
+
+1) Selector
+   - Tells which HTML element you want to style
+   - Example: p, h1, .className, #idName
+
+2) Property
+   - The characteristic you want to change
+   - Example: color, font-size, background, margin
+
+3) Value
+   - The setting you want to apply to the property
+   - Example: red, 20px, center, blue
+
+Full Example:
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+Selector: p
+Properties: color, font-size
+Values: blue, 16px
