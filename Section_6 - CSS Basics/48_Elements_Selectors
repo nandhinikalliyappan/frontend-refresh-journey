@@ -1,0 +1,26 @@
+Element Selector in CSS
+------------------------
+1) An element selector (also called a type selector) targets HTML elements 
+   by their tag name.
+
+2) It applies styles to ALL elements of that type on the page.
+
+3) Example:
+   
+   p {
+       color: red;
+   }
+
+   This will make all <p> elements red.
+
+4) Common element selectors:
+   - p
+   - h1, h2, h3
+   - div
+   - span
+   - img
+   - a
+
+5) Element selectors are useful for general styling, but avoid overusing them
+   when you need more specific control — use classes or IDs instead.
+
