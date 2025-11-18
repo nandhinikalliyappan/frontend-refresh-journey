@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Your Course Landing page</h1>
+    <form action="/clp">
+        <div>
+        <label for="title" >Course Title </label>
+        <input type="text" id="title" name = "title" required>
+        </div>
+
+        <div>
+        <label for="description">Course Description </label>
+        <div>
+        <textarea name="descrition" id="description" rows="10" cols="30"></textarea>
+        </div>
+        </div>
+
+        <div>
+        <label for="skill">Skill level</label>
+        <select name="skill" id="skill">
+        <option value="beginner">Beginner Level</option>
+        <option value="intermediate">Intermediate Level</option>
+        <option value="expert">Expert Level</option>
+        <option value="all">All Levels</option>
+        </select>
+        </div>
+        <div>
+        <label for="publish">Ready to publish course</label>
+        <input type="checkbox" id="publish" name="publish">
+        </div>
+        <!--Css style has been applied to this line below-->
+         <button style="color: blue;background-color: blueviolet;font-size: 30px;">submit</button>
+    </form>
+
+        <!-- Inline Styling Notes:
+
+        Inline styling means applying CSS directly to an HTML element using the "style" attribute.
+        It affects only that specific element.
+
+        <p style="color: blue; font-size: 18px;">Hello World</p>
+
+        Inline styles are useful for quick, small changes, but not recommended for large projects
+        because they mix HTML with CSS and make the code harder to maintain.
+
+        Modern best practice is to use internal or external CSS instead of inline styling.
+
+        -->
+
+    
+</body>
+</html>
