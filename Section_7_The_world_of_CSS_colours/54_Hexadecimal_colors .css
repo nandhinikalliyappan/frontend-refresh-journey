@@ -1,0 +1,30 @@
+p{
+    color: #15ce46;
+
+}
+
+h1{
+    color: #FE2200;
+    background-color: #22fbff;
+}
+
+/* 
+=====================
+      HEX NOTES
+=====================
+
+- HEX = Hexadecimal color code used in CSS.
+- Starts with #: #RRGGBB
+- RR = Red, GG = Green, BB = Blue
+- Each pair ranges from 00 to FF (0–255).
+
+Examples:
+  #FF0000 → red
+  #00FF00 → green
+  #0000FF → blue
+  #000000 → black
+  #FFFFFF → white
+
+Short form:
+  #RGB (e.g., #F00 = #FF0000)
+*/
