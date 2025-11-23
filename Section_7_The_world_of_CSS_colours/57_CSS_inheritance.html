@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in CSS</title>
+    <style>
+        body {
+            color: darkblue;
+            /* Parent color */
+        }
+
+        h1 {
+            /* inherits darkblue automatically */
+        }
+
+        p {
+            /* inherits darkblue automatically */
+        }
+
+        span {
+            /* inherits darkblue automatically */
+        }
+
+        .override {
+            color: crimson;
+            /* Child overrides parent color */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This heading inherits the body color</h1>
+
+    <p>This paragraph also inherits the body color</p>
+
+    <p>This is <span>span text inheriting darkblue</span></p>
+
+    <p class="override">This paragraph overrides the inherited color</p>
+
+</body>
+
+</html>
