@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about fonts</title>
+    <style>
+        /* Font Size Example */
+        p {
+            font-size: 20px;
+            /* Increases text size */
+        }
+
+        /* Font Weight Example */
+        h1 {
+            font-weight: 700;
+            /* Bold heading */
+        }
+
+        .light-text {
+            font-weight: 300;
+            /* Lighter text */
+        }
+
+        /* Font Style Example */
+        .italic-text {
+            font-style: italic;
+            /* Italic text */
+        }
+
+        .oblique-text {
+            font-style: oblique;
+            /* Slightly slanted text */
+        }
+
+        /* All 3 together */
+        .combined {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Font Demonstration</h1>
+
+    <p>This paragraph is using <strong>font-size: 20px</strong>.</p>
+
+    <p class="light-text">
+        This is light text → <strong>font-weight: 300</strong>.
+    </p>
+
+    <p class="italic-text">
+        This text is italic → <strong>font-style: italic</strong>.
+    </p>
+
+    <p class="oblique-text">
+        This text is oblique → <strong>font-style: oblique</strong>.
+    </p>
+
+    <p class="combined">
+        This text uses all 3: <br>
+        font-size: 18px; font-weight: 600; font-style: italic;
+    </p>
+
+    <!--
+===========================================
+        CSS FONT PROPERTIES — DETAILED NOTES
+===========================================
+
+1) FONT-SIZE
+-----------------
+- Defines how BIG or SMALL the text appears.
+- Most common units:
+    px  → fixed size (18px, 20px)
+    em  → relative to parent font size
+    rem → relative to root (html) font size
+    %   → percentage of parent's size
+- Bigger font-size = more readable headings.
+- Smaller sizes used for paragraphs or labels.
+
+Example:
+p {
+    font-size: 16px;
+}
+h1 {
+    font-size: 32px;
+}
+
+--------------------------------------------
+
+2) FONT-WEIGHT
+-----------------
+- Controls HOW THICK or HOW BOLD the text appears.
+- Values can be:
+    normal  → default weight (usually 400)
+    bold    → bold text (usually 700)
+    lighter → lighter version
+    bolder  → heavier version
+    100–900 → numeric scale (100 = thin, 900 = heavy)
+
+Why we use numbers:
+- Gives fine control for modern fonts (like 300, 400, 500, 700).
+
+Example:
+h1 {
+    font-weight: 700;   /* Bold */
+}
+p {
+    font-weight: 300;   /* Light */
+}
+
+--------------------------------------------
+
+3) FONT-STYLE
+-----------------
+- Controls whether the text is:
+    normal  → default style
+    italic  → slanted italic text
+    oblique → similar to italic but less commonly used
+- Used for highlighting important words or styling quotes.
+
+Example:
+em {
+    font-style: italic;
+}
+
+--------------------------------------------
+QUICK SUMMARY
+-----------------
+font-size  → Controls text size  
+font-weight → Controls boldness/thickness  
+font-style → Controls italic/normal appearance  
+
+All three properties affect TEXT APPEARANCE and are used together 
+to improve readability, design, and user experience.-->
+
+</body>
+
+</html>
