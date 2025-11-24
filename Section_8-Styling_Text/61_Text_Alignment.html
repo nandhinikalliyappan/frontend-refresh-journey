@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment</title>
+    <link rel="stylesheet" href="61_Text_Alignment.css">
+</head>
+
+<body>
+    <div class="example-left">
+        <p>This text is aligned LEFT.</p>
+    </div>
+
+    <div class="example-right">
+        <p>This text is aligned RIGHT.</p>
+    </div>
+
+    <div class="example-center">
+        <p>This text is CENTERED.</p>
+    </div>
+
+    <div class="example-justify">
+        <p>
+            This text is JUSTIFIED. It stretches the spacing between words
+            so that both the left and right sides are aligned neatly.
+        </p>
+    </div>
+
+    <div class="example-start">
+        <p>This text aligns to the START (left for LTR languages).</p>
+    </div>
+
+    <div class="example-end">
+        <p>This text aligns to the END (right for LTR languages).</p>
+    </div>
+
+    <!--TEXT ALIGNMENT NOTES
+
+        text-align controls how inline content (text, inline elements, inline-block elements,
+        and sometimes images) is positioned horizontally inside its container.
+
+        It works on the *content inside the element*, not on the element itself.
+
+        Common values:
+        - left      
+            → Aligns text to the left side of the container.
+            → Default for most Left-to-Right (LTR) languages.
+
+        - right     
+            → Aligns text to the right side of the container.
+            → Default for Right-to-Left (RTL) languages like Arabic/Hebrew.
+
+        - center    
+            → Centers the text horizontally inside the container.
+
+        - justify   
+            → Stretches the text so both left & right edges align.
+            → Adds spacing between words to create clean column-like text.
+
+        Logical (direction-aware) values:
+        - start
+            → Aligns text to the starting edge of the writing direction.
+            → LTR = left, RTL = right.
+
+        - end
+            → Aligns text to the ending edge of the writing direction.
+            → LTR = right, RTL = left.
+
+        Why text-align is used:
+        - Improves readability.
+        - Helps control layout inside a container without moving the container itself.
+        - 'start' and 'end' automatically adapt for multi-language support.
+
+        Example:
+        p {
+            text-align: center;
+        }
+
+    -->
+
+</body>
+
+</html>

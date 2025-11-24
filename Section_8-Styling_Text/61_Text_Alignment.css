@@ -1,0 +1,25 @@
+/* TEXT ALIGN EXAMPLES */
+
+.example-left {
+    text-align: left;
+}
+
+.example-right {
+    text-align: right;
+}
+
+.example-center {
+    text-align: center;
+}
+
+.example-justify {
+    text-align: justify;
+}
+
+.example-start {
+    text-align: start;
+}
+
+.example-end {
+    text-align: end;
+}
