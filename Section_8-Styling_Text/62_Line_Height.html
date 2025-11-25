@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Height</title>
+    <style>
+        article {
+            font-size: 16px;
+        }
+
+        /* Tight text */
+        .tight {
+            line-height: 1;
+        }
+
+        /* Perfect reading experience */
+        .readable {
+            line-height: 1.5;
+        }
+
+        /* More open space for headings/hero text */
+        .loose {
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Line Height — Realistic Example</h2>
+
+    <p class="tight">
+        This is an example of tight line-height. Notice how the lines are very close to each
+        other, making the paragraph feel packed and a little hard to read. In real websites,
+        this type of spacing is rarely used for body text because readers feel uncomfortable
+        when the lines don’t have enough breathing room.
+    </p>
+
+    <p class="readable">
+        This is the most common and comfortable line-height used in paragraphs. The spacing
+        between each line feels natural, making it easier for readers to follow long blocks
+        of text without feeling tired. Most blogs, articles, and modern websites use a
+        line-height between 1.4 and 1.6 because it improves readability and looks clean
+        on all screen sizes.
+    </p>
+
+    <p class="loose">
+        This paragraph demonstrates loose line-height. The lines have a lot more space
+        between them, giving the text an open and airy feeling. Designers often use this
+        type of spacing for hero sections, large headings, or minimalistic layouts where
+        extra spacing is preferred to make the text stand out and look elegant on the page.
+    </p>
+    
+    <!--LINE-HEIGHT
+        - Controls the vertical space between lines of text.
+        - Improves readability.
+        - Usually larger than the font-size (e.g., 1.4 or 1.6).
+
+        Example:
+            p {
+                  line-height: 1.5; /* 1.5 times the font size */
+            }
+
+        Tip:
+        - line-height accepts unitless values (1.5) or values (20px).
+        - Unitless is preferred because it scales better with font-size. 
+    -->
+
+</body>
+
+</html>
