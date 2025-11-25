@@ -1,0 +1,151 @@
+/* 
+========================================================
+          ADDING CUSTOM FONTS — GOOGLE FONTS
+========================================================
+
+Google Fonts provides free web fonts you can use in websites.
+There are 3 main ways to add them:
+
+1. `<link>` tag in HTML `<head>` (recommended)  
+2. `@import` inside a CSS file  
+3. Self-hosting via `@font-face` (advanced / for full control)
+
+Each method loads the font files from Google's servers; you must also use proper CSS `font-family` rules and fallbacks.
+
+--------------------------------------------------------
+1) METHOD 1 — <link> TAG IN HTML (RECOMMENDED)
+--------------------------------------------------------
+- Fastest and best-performing method.
+- Add the <link> inside the <head> section of HTML.
+
+Example:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+Apply in CSS:
+    body {
+        font-family: "Poppins", Arial, sans-serif;
+    }
+
+Why use this method:
+- Better performance than @import
+- Loads fonts earlier
+- Works well with browser caching
+- Easy & recommended by Google
+
+Tips:
+- Use "preconnect" for performance boost.
+- Use display=swap to avoid invisible text issues.
+- Only request the weights you need.
+
+--------------------------------------------------------
+2) METHOD 2 — @import INSIDE CSS
+--------------------------------------------------------
+How: at top of your CSS file, put Google's @import URL.
+
+- Add this at the TOP of your CSS file.
+
+Example:
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+Notes:
+- Keeps HTML clean.
+- But slower than <link> because browser loads CSS first → then the import.
+- Not recommended for performance-heavy sites.
+
+--------------------------------------------------------
+3) METHOD 3 — SELF-HOSTING WITH @font-face (ADVANCED)
+--------------------------------------------------------
+- Download .woff2 font files and store them in your project (e.g., /fonts/).
+- Gives full control over speed, caching, privacy.
+
+Example:
+    @font-face {
+        font-family: "MyPoppins";
+        src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    body {
+        font-family: "MyPoppins", sans-serif;
+    }
+
+Why self-host?
+- Full control over speed & cache
+- Works offline
+- No external dependency
+
+Downsides:
+- You must manage font files
+- More setup work
+
+--------------------------------------------------------
+GOOGLE’S CSS HELPER CLASSES (IMPORTANT NOTE)
+--------------------------------------------------------
+Google sometimes shows:
+
+    .emilys-candy-regular {
+        font-family: "Emilys Candy", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+This DOES NOT load the font.
+You MUST still use <link>, @import, or @font-face.
+
+--------------------------------------------------------
+FALLBACK FONTS (IMPORTANT)
+--------------------------------------------------------
+Always give multiple fonts:
+
+Example:
+    body {
+        font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+    }
+
+Meaning:
+- Use Poppins first.
+- If missing → use Helvetica Neue.
+- If missing → use Arial.
+- If all fail → use generic sans-serif.
+
+Why fallbacks?
+- Prevents weird default fonts
+- Ensures readability
+- Required for good UI design
+
+--------------------------------------------------------
+GENERIC FONT FAMILIES (ALWAYS KEEP LAST)
+--------------------------------------------------------
+Generic families are basic built-in browser fonts:
+
+- serif        → Times New Roman style
+- sans-serif   → Arial style
+- monospace    → all letters same width (Courier)
+- cursive      → handwriting style
+- fantasy      → decorative fonts
+
+Used because:
+- They ALWAYS exist on every device.
+- They guarantee that text will display even if everything else fails.
+
+--------------------------------------------------------
+PERFORMANCE BEST PRACTICES
+--------------------------------------------------------
+✓ Prefer <link> over @import  
+✓ Use preconnect for faster loading  
+✓ Use display=swap  
+✓ Only load required weights  
+✓ Use woff2 when self-hosting  
+
+========================================================
+                 END OF NOTES
+========================================================
+*/
