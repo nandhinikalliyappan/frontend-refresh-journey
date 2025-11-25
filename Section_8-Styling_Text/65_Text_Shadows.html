@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadows</title>
+    <style>
+        h2 {
+            text-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <H1>Example for text shadows</H1>
+
+    <h2>Amadeus ipsum - Basic Text Shadow Example</h2>
+
+    <h2 style="text-shadow: 1px 1px 6px rgba(0,0,0,0.4);">
+        Soft Shadow Effect
+    </h2>
+
+    <h2 style="color: #00eaff;
+           text-shadow: 
+           0 0 5px #00eaff,
+           0 0 10px #00eaff,
+           0 0 20px #00eaff;">
+        Neon Glow Text
+    </h2>
+    
+    <h2 style="text-shadow: 
+           2px 2px 0 red,
+           4px 4px 0 blue;">
+        Multiple Shadow Layers
+    </h2>
+    <!-- 
+        ===========================================
+                    TEXT SHADOW — NOTES
+        ===========================================
+
+        1) Definition:
+        text-shadow adds shadow effects to text.
+        Used for glow, neon, 3D, or soft shadow effects.
+
+        -------------------------------------------
+        2) Syntax:
+        text-shadow: offset-x offset-y blur-radius color;
+
+        offset-x   = horizontal shadow
+        offset-y   = vertical shadow
+        blur-radius (optional) = softness of shadow
+        color = shadow color (hex, rgb, rgba)
+
+        -------------------------------------------
+        3) Basic Examples:
+
+        A) Normal Shadow:
+        text-shadow: 2px 2px 4px black;
+
+        B) Soft Shadow:
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+
+        C) Sharp Shadow (no blur):
+        text-shadow: 3px 3px 0 #555;
+
+        -------------------------------------------
+        4) Multiple Shadows:
+        Use commas to stack shadows:
+        text-shadow: 2px 2px 4px red, -2px -2px 4px blue;
+
+        -------------------------------------------
+        6) Tips:
+        ✔ Use shadows mainly on headings.
+        ✔ rgba() gives smoother shadows.
+        ✔ Avoid heavy shadows on body text.
+        ✔ Too many shadows can slightly affect performance.
+
+        ===========================================
+    -->
+
+
+</body>
+
+</html>
