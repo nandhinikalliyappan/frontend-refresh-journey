@@ -1,0 +1,83 @@
+
+=====================================================
+                TEXT DECORATION — FULL NOTES
+=====================================================
+
+text-decoration controls decorative lines added to text.
+It can underline, overline, strike-through text and can
+also control the line's color, style, and thickness.
+
+----------------------------------------------
+1) text-decoration-line
+----------------------------------------------
+Controls WHICH line appears.
+
+Values:
+- underline        → line below the text
+- overline         → line above the text
+- line-through     → strike-through text
+- none             → removes decoration
+
+----------------------------------------------
+2) text-decoration-color
+----------------------------------------------
+Changes the color of the decoration line.
+
+Example:
+  text-decoration-color: red;
+
+----------------------------------------------
+3) text-decoration-style
+----------------------------------------------
+Controls the style of the line.
+
+Values:
+- solid
+- dotted
+- dashed
+- double
+- wavy
+
+Example:
+  text-decoration-style: dotted;
+
+----------------------------------------------
+4) text-decoration-thickness
+----------------------------------------------
+Controls the thickness of the line.
+
+Values:
+- auto        → browser default
+- <length>    → e.g., 2px, 3px
+- from-font   → uses font's recommended weight
+
+Example:
+  text-decoration-thickness: 3px;
+
+----------------------------------------------
+5) Shorthand: text-decoration
+----------------------------------------------
+You can combine ALL properties in one line:
+
+Format:
+text-decoration: line style color thickness;
+
+Example:
+  text-decoration: underline dotted blue 2px;
+
+Meaning:
+- underline line
+- dotted style
+- blue color
+- 2px thickness
+
+----------------------------------------------
+Why we use text-decoration:
+----------------------------------------------
+- To style or remove link underlines
+- To create custom underline designs
+- To show sale prices with line-through
+- To emphasize or highlight text
+- To improve visual design control
+
+=====================================================

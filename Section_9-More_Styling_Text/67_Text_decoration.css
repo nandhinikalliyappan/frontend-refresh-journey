@@ -1,0 +1,36 @@
+.underline{
+   text-decoration-line: underline;
+}
+
+.overline{
+    text-decoration-line: overline;
+}
+
+.line-through{
+    text-decoration-line: line-through;
+}
+.underline-color{
+    text-decoration: underline;
+    text-decoration-color: red
+}
+
+.dotted-underline{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.wavy-underline{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: purple;
+}
+
+.thick-underline{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.full-shorthand{
+
+    text-decoration: underline blue dashed 3px;
+}
