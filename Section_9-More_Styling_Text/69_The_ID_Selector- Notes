@@ -1,0 +1,28 @@
+=====================================
+            ID SELECTOR — NOTES
+=====================================
+
+1) The ID selector targets an element by its unique ID.
+2) IDs must be UNIQUE — only ONE element should use a specific ID.
+3) In CSS, you select an ID using #.
+4) IDs are often used for:
+   - unique sections
+   - specific headings
+   - JavaScript targeting
+   - single-use styling
+
+Syntax:
+#idName {
+    property: value;
+}
+
+Why IDs must be unique?
+- HTML treats an "id" like an identifier.
+- It helps browsers, CSS, and JavaScript easily find that one element.
+- Using the same ID on multiple elements causes conflicts.
+
+Specificity:
+- ID selectors have HIGH specificity.
+- They override element selectors and class selectors.
+
+=====================================
