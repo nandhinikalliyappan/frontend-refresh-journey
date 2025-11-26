@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+p{
+    font-size: 24px;
+}
+
+#leafy{
+    color: #1d6e09;
+    text-decoration-line: underline;
+}
+
+.latin{
+    font-style: italic;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+a{
+    color: orange;
+    text-decoration-line: none;
+}
+
+ul{
+    list-style: square;
+}
