@@ -1,0 +1,37 @@
+------------------------------------------------------
+   CSS CLASS SELECTOR — NOTES
+---------------------------------------------------------
+
+1. What is a Class Selector?
+   - A class selector is used to style one or more HTML elements.
+   - It targets elements using a dot (.) followed by the class name.
+
+---------------------------------------------------------
+2. Syntax:
+     .className {
+        property: value;
+     }
+
+---------------------------------------------------------
+3. Example:
+   HTML:
+     <p class="highlight">Hello</p>
+
+   CSS:
+     .highlight {
+        color: red;
+        font-weight: bold;
+     }
+7. Best Practices:
+   - Use lowercase class names
+   - Use hyphens (btn-primary, card-title)
+   - Use meaningful names (not .red-text, better: .warning-text)
+
+---------------------------------------------------------
+8. Summary:
+   - .classname selects all elements with that class
+   - Reusable and flexible
+   - Elements can have multiple classes
+   - Works well with element selectors
+
+------------------------------------------------------ */
