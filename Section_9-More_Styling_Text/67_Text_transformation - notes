@@ -1,0 +1,21 @@
+
+
+=====================================
+        TEXT TRANSFORM — NOTES
+=====================================
+
+text-transform controls **how text is automatically changed** in terms of
+uppercase/lowercase/capitalization.
+
+It does NOT modify the original text in HTML — it only *visually* changes it.
+
+Common values:
+- uppercase   → converts all letters to CAPITALS
+- lowercase   → converts all letters to small letters
+- capitalize  → makes the FIRST letter of every word uppercase
+- none        → removes any transformation
+
+Use Cases:
+- uppercase → headings, buttons, navigation menus
+- capitalize → names, titles
+- lowercase → minimal/modern style designs
