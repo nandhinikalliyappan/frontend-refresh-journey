@@ -1,0 +1,46 @@
+   ====================================================
+   CSS FONT SHORTHAND — COMPLETE NOTES
+   ====================================================
+
+   1. Definition:
+      - The font shorthand property in CSS allows you to 
+        set multiple font-related properties in a single line.
+      - It can include:
+           font-style, font-variant, font-weight, font-stretch,
+           font-size, line-height, and font-family.
+      - font-size and font-family are required; all others 
+        are optional but must precede font-size if used.
+
+   2. Required properties:
+      - font-size
+      - font-family
+      (All other properties are optional but must precede font-size)
+
+   3. Complete order of properties (CSS standard):
+      [font-style] || [font-variant] || [font-weight] || [font-stretch] font-size [/line-height] font-family
+      - '||' means the properties are optional and can appear in any order before font-size.
+      - font-family must come last.
+      - font-size is required.
+      - line-height is optional and comes after font-size, separated by '/'
+
+   4. Line-height:
+      - Optional, comes immediately after font-size separated by "/"
+      Example: 16px/1.5
+
+   5. Valid examples:
+      font: 16px Arial;
+      font: italic 700 18px/1.4 "Poppins", sans-serif;
+      font: normal small-caps bold 20px/1.2 "Inter", sans-serif;
+
+   6. Invalid examples:
+      font: Arial 16px;       /* wrong order */
+      font: bold Arial;       /* missing size */
+      font: 16px;             /* missing family */
+
+   7. Important notes:
+      - Using font shorthand resets unspecified properties 
+        (style, variant, weight, stretch, line-height) to defaults.
+      - Always maintain correct order to avoid errors.
+      - font-size and font-family are always required.
+
+====================================================
