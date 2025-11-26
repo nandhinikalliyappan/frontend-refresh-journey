@@ -1,0 +1,37 @@
+COMPLETE LINK STYLING – CLEAR EXPLANATION
+
+Links (<a href="…">) can appear in different states depending on how the user 
+interacts with them. CSS pseudo-classes help you style each state separately.
+
+1. :link  
+   - This styles a normal link that has NOT been visited yet.
+   - Example: a link you are seeing for the first time.
+
+2. :visited  
+   - This styles a link that you have already clicked before.
+   - Browsers limit styling for privacy (usually only color can change).
+
+3. :hover  
+   - This applies when the mouse pointer is placed over the link.
+   - Often used to change color or show underline on hover.
+
+4. :active  
+   - This applies at the exact moment you click the link.
+   - Gives a “pressed” or “clicked” effect.
+
+5. :focus  
+   - This applies when the link is selected using the keyboard (Tab key) 
+     or clicked, but the mouse is no longer over it.
+   - Helps keyboard users know which link is active.
+
+IMPORTANT: ALWAYS follow this order to avoid conflict:
+    a:link → a:visited → a:hover → a:active → a:focus
+
+This order makes sure all states work properly (example: hover should override visited).
+
+Common properties used when styling links:
+    - color
+    - text-decoration (underline or none)
+    - background-color
+    - outline (for focus visibility)
+

@@ -1,0 +1,49 @@
+ ------------------------------------------------------
+   CSS LIST-STYLE-TYPE — DETAILED GUIDE
+---------------------------------------------------------
+
+1. What is list-style-type?
+   - The CSS list-style-type property defines the marker (bullet or number) style for list items (<ul> or <ol>).
+   - It lets you change how the default bullets or numbers appear.
+
+---------------------------------------------------------
+2. Common Values:
+
+   disc                  → Solid circle (default for <ul>) •
+   circle                → Hollow circle ○
+   square                → Square ▪
+   decimal               → Numbers 1, 2, 3 ...
+   decimal-leading-zero  → Numbers with leading zeros 01, 02, 03 ...
+   lower-roman           → Roman numerals lowercase i, ii, iii
+   upper-roman           → Roman numerals uppercase I, II, III
+   lower-alpha           → Lowercase letters a, b, c
+   upper-alpha           → Uppercase letters A, B, C
+   none                  → No marker
+
+---------------------------------------------------------
+3. Examples:
+
+   /* Solid bullets (default) */
+   ul { list-style-type: disc; }
+
+   /* Hollow circles */
+   ul { list-style-type: circle; }
+
+   /* Square bullets */
+   ul { list-style-type: square; }
+
+   /* Numbered list */
+   ol { list-style-type: decimal; }
+
+   /* Roman numerals */
+   ol { list-style-type: upper-roman; }
+
+   /* Remove bullets or numbers */
+   ul, ol { list-style-type: none; }
+
+---------------------------------------------------------
+4. Tips:
+   - Use descriptive class names when styling lists, e.g., .menu-list, .feature-list
+   - Reset list-style-type to none for custom menus
+   - Works with <ul> and <ol> elements
+------------------------------------------------------ 
