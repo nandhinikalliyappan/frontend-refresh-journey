@@ -1,0 +1,23 @@
+ ============================================
+   ATTRIBUTE SELECTOR
+   ============================================
+
+   The attribute selector in CSS allows you to select and style
+   HTML elements based on attributes and their values,
+   without adding extra classes or IDs.
+
+   It is very powerful when you want specific targeting 
+   based on HTML attributes.
+
+   Example:
+   [attribute]          → selects elements that have the attribute
+   [attribute="value"]  → selects elements with exact value
+   [attribute^="val"]   → value starts with
+   [attribute$="val"]   → value ends with
+   [attribute*="val"]   → value contains
+
+   Why use it?
+   - Helps target specific elements WITHOUT adding 
+     new classes or IDs.
+   - Useful for forms, links, images, state-based elements, etc.
+============================================
