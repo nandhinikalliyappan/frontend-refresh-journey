@@ -1,0 +1,45 @@
+   ------------------------------------------------------
+   DESCENDANT COMBINATOR
+   ------------------------------------------------------
+
+   The descendant combinator in CSS is used to select 
+   elements that are inside another element, at any depth.
+
+   It works by placing a SPACE between two selectors.
+
+   ✔ Syntax:
+       parent child
+
+   ✔ Meaning:
+       Selects all elements that match "child" which are 
+       located anywhere inside the element matching "parent".
+
+   It does NOT matter whether the child is:
+       • a direct child
+       • a grandchild
+       • nested deeply inside
+
+   If it is inside, it will be selected.
+
+   ------------------------------------------------------
+   Example:
+       div p {
+           color: blue;
+       }
+
+   This means:
+       • Select all <p> elements
+       • That are inside a <div>, at any level
+       • Works even if <p> is 2, 3, or 10 levels deep
+
+   HTML Example:
+       <div>
+           <p>Direct child → selected</p>
+
+           <section>
+               <p>Grandchild → also selected</p>
+           </section>
+       </div>
+
+       <p>Outside the div → NOT selected</p>
+   ------------------------------------------------------ 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Combinator </title>
+    <style>
+        .parent p {
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <p>Paragraph 1 (inside parent)</p>
+
+    <div class="child">
+        <p>Paragraph 2 (inside child → also inside parent)</p>
+    </div>
+</div>
+
+<p>Paragraph 3 (outside parent)</p>
+</body>
+</html>

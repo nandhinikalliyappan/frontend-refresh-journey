@@ -1,0 +1,52 @@
+  ------------------------------------------------------
+   CHILD COMBINATOR ( > )
+   ------------------------------------------------------
+
+   The child combinator in CSS selects ONLY the 
+   DIRECT children of a parent element.
+
+   It is written using the > symbol between selectors.
+
+   ✔ Syntax:
+       parent > child
+
+   ✔ Meaning:
+       Selects only the child elements that are 
+       directly inside the parent, NOT grandchildren.
+
+   ✔ Key Difference from Descendant Combinator:
+       • Descendant (space) → selects ALL levels inside
+       • Child ( > ) → selects ONLY first-level children
+
+   ------------------------------------------------------
+   Example:
+       div > p {
+           color: red;
+       }
+
+   What this means:
+       • Select <p> elements
+       • ONLY if they are DIRECT children of <div>
+       • Ignore <p> elements that are nested deeper
+
+   ------------------------------------------------------
+   HTML Example Explained:
+
+       <div>
+           <p>Direct child → selected</p>
+
+           <section>
+               <p>Grandchild → NOT selected</p>
+           </section>
+       </div>
+
+   ✔ Explanation:
+       - The first <p> is placed directly inside <div>,
+         so it MATCHES the selector div > p and turns red.
+
+       - The second <p> is inside <section>, which is inside <div>,
+         so it is a GRANDCHILD of <div>.
+         Child combinator does NOT select grandchildren,
+         so this <p> is NOT styled.
+
+   ------------------------------------------------------

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator</title>
+    <style>
+        .va>p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="va">
+        <p>This is a direct child → selected</p>
+
+        <p>Second Direct child
+
+        <section>
+            <div>
+            <p>This is a nested paragraph → NOT selected</p></div>
+        </section></p>
+
+        <p>Another direct child</p>
+    </div>
+
+</body>
+
+</html>
