@@ -1,0 +1,56 @@
+/* =====================================================
+   COMPOUND SELECTOR — DETAILED NOTES
+   =====================================================
+
+   1) What is a compound selector?
+     A compound selector is a CSS selector made by combining multiple simple selectors without any spaces to target one single element that matches all the conditions.
+      - Key: it targets *the same element* with multiple conditions.
+
+   2) Syntax examples (basic):
+      - tag + class:        div.card
+      - class + class:      .btn.primary
+      - id + class:         #header.big
+      - tag + attribute:    input[type="email"]
+      - class + pseudo:     a.button:hover
+      - mixed:              button.btn.large[aria-pressed="true"]:focus
+
+   3) How it works:
+      - All simple selectors in the compound must be true for the
+        same DOM element for the selector to match.
+      - Order in the selector does NOT affect matching (but a
+        conventional order improves readability).
+
+   4) Conventional writing order (for readability, not required):
+      tag → id → classes → attributes → pseudo-classes → pseudo-elements
+      Example:  button#save.btn.primary[disabled]:focus::after
+
+   5) Specificity (how CSS picks which rule wins):
+      - ID selectors   => 100 points each
+      - Class/attr/pseudo-class => 10 points each
+      - Type/pseudo-element => 1 point each
+      - Example:
+         .card.large (10 + 10 = 20)
+         #main (100)
+         div.card (1 + 10 = 11)
+
+   6) Compound vs combinator (difference):
+      - Compound selector: `.menu.active`  → SAME element must have both classes.
+      - Combinator selector: `.menu .item` → selects `.item` INSIDE `.menu` (different elements).
+      - Compound = AND for one element. Combinator = relationship between elements.
+
+   7) Examples (real use cases):
+
+      /* target a bold primary button */
+      button.btn.primary { padding: 12px 20px; }
+
+      /* target required text inputs that are also styled */
+      input.required[type="text"] { border: 2px solid blue; }
+
+      /* target only focused link buttons */
+      a.button:focus { outline: 2px solid #00f; }
+
+      /* very specific — tag + class + attribute + pseudo-class */
+      li.product[data-instock="true"]:first-child { font-weight: bold; }
+
+   
+   ===================================================== */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Selector</title>
+    <style>
+        /* 1. button with class "primary" */
+        button.primary {
+            background: orange;
+            color: white;
+        }
+
+        /* 2. li with class "special" */
+        li.special{
+            color: green;
+        }
+
+        /* 3. input with class "big" AND type="text" */
+        input.big[type="text"]{
+            border: 2px solid blue;
+        }
+       /* 4. paragraph with ID "intro" */
+        p#intro{
+            color: red;
+        }
+        
+        /* 5. paragraph with ID "intro" AND class "highlight" */
+        p#intro.highlight{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="primary">Click Me</button>
+
+    <input type="text" class="big" placeholder="Type here">
+
+    <ul>
+        <li class="special">Special Item</li>
+        <li>Normal Item</li>
+    </ul>
+
+    <p id="intro" class="highlight">This is the introduction text.</p>
+
+</body>
+
+</html>
