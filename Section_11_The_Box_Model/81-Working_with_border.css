@@ -1,0 +1,32 @@
+    
+    .box-width{
+        border-top: 10px;
+        border-bottom: 6px;
+        border-left: 3px;
+        border-right: 3px;
+        border-style: solid;
+    }
+
+    
+    .border-style-demo>p{
+        border-top: dashed;
+        border-left: dotted;
+        border-right: double;
+        border-bottom: solid;
+    }
+
+
+    .colorful-border{
+        border-top-color: red;
+        border-bottom-color: green;
+        border-left-color: yellow;
+        border-right-color: blue;
+        border-style: solid;
+    }
+
+    /*<!--Create a div using the shorthand border property, 
+     but apply it only to two sides (example: border on top & bottom only)-->*/
+     .top-bottom-border{
+        border-top: dotted;
+        border-bottom: dotted;
+     }

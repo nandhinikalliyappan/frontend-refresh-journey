@@ -1,0 +1,130 @@
+The Box Model
+------------
+->Every single element in the browser is a box and we can control different properties of 
+  each box.
+
+┌─────────────────────────────┐
+│          BORDER             │ ← The line around the box
+│  ┌────────────────────────┐ │
+│  │        PADDING         │ │
+│  │   ┌──────────────────┐ │ │
+│  │   │     CONTENT      │ │ │
+│  │   └──────────────────┘ │ │
+│  └────────────────────────┘ │
+└─────────────────────────────┘
+
+Why Do We Use Borders?
+---------------------
+Borders help you:
+
+• Highlight elements
+• Create outlines or boxes
+• Make buttons, cards, sections
+• Separate content visually
+• Debug layout (very useful!)
+
+--------------------------------------------
+⭐ BORDER PROPERTIES
+--------------------------------------------
+
+1️⃣ BORDER-WIDTH  
+Defines how thick the border is.
+
+• Common values:
+  - thin
+  - medium
+  - thick
+
+• Using units:
+  border-width: 1px;
+  border-width: 5px;
+  border-width: 0.2rem;
+
+• Each side can be set separately:
+  border-top-width: 3px;
+  border-right-width: 2px;
+  border-bottom-width: 5px;
+  border-left-width: 1px;
+
+
+2️⃣ BORDER-STYLE (MOST IMPORTANT)  
+The border will NOT appear unless a style is set.
+
+• Common styles:
+  - solid → continuous line
+  - dashed → dashes
+  - dotted → dots
+  - double → two lines
+  - groove → 3D effect
+  - ridge → opposite of groove
+  - inset → looks pressed in
+  - outset → looks pushed out
+  - none → no border
+  - hidden → similar to none
+
+• Example:
+  border-style: dashed;
+
+
+3️⃣ BORDER-COLOR  
+Sets the color of the border.
+
+• Examples:
+  border-color: red;
+  border-color: #3498db;
+  border-color: rgb(20, 200, 40);
+
+• Set different colors for each side:
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-left-color: yellow;
+
+Border Shorthand Property (All-in-One)
+--------------------------------------
+border: <border-width> <border-style> <border-color>;
+
+Example:
+border: 2px solid blue;
+
+Example
+-------
+Border for Each Side
+---------------------
+You can target any side individually:
+
+border-top: 4px solid red;
+border-right: 3px dotted green;
+border-bottom: 5px double blue;
+border-left: 2px dashed purple;
+
+Important Notes
+================
+-> Border shows only if border-style is set.
+-> Border adds to the element’s size.
+-> For example, if width = 200px and border = 5px, actual width = 210px.
+
+border: shorthand ALWAYS applies to ALL 4 sides.
+===============================================
+Example:
+   border: 2px solid red;
+
+
+-->This puts a 2px solid red border on:
+
+top
+right
+bottom
+left
+
+So YES — when you use the shorthand border: it never applies to just one side.
+
+Summary (Easy to Remember)
+
+Property         Applies To
+--------------------------------
+border:          ALL 4 sides
+border-top:      Only top
+border-right:    Only right
+border-bottom:   Only bottom
+border-left:     Only left
