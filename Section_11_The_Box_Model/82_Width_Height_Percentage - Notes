@@ -1,0 +1,119 @@
+==============================
+WIDTH, HEIGHT & PERCENTAGES
+==============================
+
+1. WIDTH
+--------
+Width controls how wide an element is (horizontal size).
+
+2. HEIGHT
+---------
+Height controls how tall an element is (vertical size).
+
+3. WIDTH & HEIGHT with px
+-------------------------
+px = fixed size (does not change with screen size)
+
+Example:
+.box {
+    width: 300px;
+    height: 200px;
+}
+
+4. WIDTH & HEIGHT with %
+-------------------------
+Percentages depend on the PARENT element's size.
+
+Example:
+Parent width = 500px
+Child width = 50%  --> 250px
+
+5. WIDTH with %
+---------------
+Width percentage almost always works because the parent always has a width.
+
+Example:
+.parent {
+    width: 800px;
+}
+
+.child {
+    width: 50%;   /* 400px */
+}
+
+6. HEIGHT with % (Important Rule)
+---------------------------------
+Height percentage works ONLY if the parent has a FIXED height.
+
+Works:
+.parent {
+    height: 300px;
+}
+
+.child {
+    height: 50%;   /* 150px */
+}
+
+Does NOT work:
+.parent {
+    height: auto;    /* auto = no fixed height */
+}
+
+.child {
+    height: 50%;     /* cannot calculate 50% of auto */
+}
+
+7. Width % Example
+------------------
+.container {
+    width: 1000px;
+}
+
+.box {
+    width: 25%;    /* 250px */
+}
+
+8. Height % Example
+-------------------
+.container {
+    height: 500px;
+}
+
+.box {
+    height: 20%;    /* 100px */
+}
+
+9. width: 100%
+--------------
+The element fills the entire width of the parent.
+
+If parent = 600px --> child = 600px
+If parent = 300px --> child = 300px
+
+10. height: auto
+----------------
+Height grows depending on the content inside.
+
+11. Why Percentage is Useful
+----------------------------
+Percentage makes layouts responsive:
+- Elements resize as screen changes
+- Flexible layouts
+- Works well with flexbox and grid
+
+12. SUMMARY (Easy to Remember)
+------------------------------
+WIDTH:
+- px = fixed width
+- % = based on parent width
+- width: 100% = fill parent width
+
+HEIGHT:
+- px = fixed height
+- % = works only if parent has fixed height
+- height: 100% = fill parent height (only when parent has height)
+
+PERCENTAGES:
+- Always relative to parent size
+- Width % works easily
+- Height % needs fixed parent height
