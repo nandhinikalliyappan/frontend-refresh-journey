@@ -1,0 +1,83 @@
+->Margin is a space between an element and other elements
+
+====================================================
+                   CSS MARGIN — CHEAT SHEET
+====================================================
+
+1) WHAT IS MARGIN?
+----------------------------------------------------
+• Margin is the empty space OUTSIDE an element's border.
+• It creates space BETWEEN two elements.
+• Margin pushes one element away from another.
+• Think of it like "breathing room" around a box.
+
+
+====================================================
+       MARGIN vs PADDING (SUPER EASY DIFFERENCE)
+====================================================
+• Padding = INSIDE space (content → border)
+• Margin  = OUTSIDE space (element → element)
+
+
+====================================================
+2) MARGIN SIDES (INDIVIDUAL PROPERTIES)
+====================================================
+margin-top:    10px;
+margin-right:  20px;
+margin-bottom: 15px;
+margin-left:   5px;
+
+
+====================================================
+3) MARGIN SHORTHAND
+====================================================
+margin: 10px;
+    → all four sides = 10px
+
+margin: 10px 20px;
+    → top-bottom = 10px
+      left-right = 20px
+
+margin: 10px 20px 5px;
+    → top = 10px
+      left-right = 20px
+      bottom = 5px
+
+margin: 10px 20px 5px 0;
+    → top = 10px
+      right = 20px
+      bottom = 5px
+      left = 0
+
+
+====================================================
+4) MARGIN COLLAPSE (IMPORTANT!!)
+====================================================
+• Only VERTICAL margins collapse (top + bottom).
+• They do NOT add together… the larger one wins.
+
+Example:
+h1 { margin-bottom: 20px; }
+h2 { margin-top: 30px; }
+
+Actual space between them = 30px (NOT 50px)
+The bigger margin dominates.
+
+• Padding does NOT collapse — only margins do.
+
+====================================================
+1) NEGATIVE MARGINS
+====================================================
+margin-top: -20px;
+→ Pulls the element upward.
+
+• Padding cannot be negative
+• Margin can be negative
+
+
+====================================================
+MEMORY TRICK (VERY USEFUL)
+====================================================
+Padding = inside the border  
+Margin  = outside the border (between elements)
+====================================================
