@@ -1,0 +1,36 @@
+/*Question 3*/
+.q1{
+    margin: 20px;
+}
+
+/*Question 2*/
+.q2a{
+    margin:0 0 40px;
+}
+
+/*Question 3*/
+.q3{
+    margin: 40px 200px 40px 200px;
+}
+
+/*Question 4*/
+p{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+/*Question 5*/
+.q5a{
+    margin-bottom: 40px;
+}
+
+.q5b{
+    margin-bottom: 80px;
+}
+
+.q5c{
+    margin-bottom: 40px;
+}
+
