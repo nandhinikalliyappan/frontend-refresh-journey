@@ -1,4 +1,62 @@
 =========================================================
+   BLOCK-LEVEL CONTENT vs INLINE CONTENT
+   ========================================================= 
+
+
+---------------------------------------------------------
+BLOCK-LEVEL CONTENT
+--------------------------------------------------------- 
+
+Definition:
+Block-level content creates a rectangular block that starts
+on a new line and occupies the full available width of its
+parent container.
+
+Characteristics:
+- Always starts on a new line
+- Takes full width by default
+- Width and height can be applied
+- Margin and padding work on all sides
+- Used to structure and layout the page
+
+Examples:
+div, p, h1–h6, section, article
+
+Mental model:
+Each block-level element forms its own row.
+
+
+---------------------------------------------------------
+INLINE CONTENT
+--------------------------------------------------------- 
+Definition:
+Inline content flows within a line of text and occupies only
+the space required by its content.
+
+Characteristics:
+- Does NOT start on a new line
+- Width and height cannot be applied
+- Margin and padding work only horizontally
+- Used for styling or highlighting text
+
+Examples:
+span, a, strong, em
+
+Mental model:
+Inline elements behave like words inside a sentence.
+
+
+
+---------------------------------------------------------
+KEY DIFFERENCE (SUMMARY)
+---------------------------------------------------------
+
+Block-level → layout structure, full-width rows
+Inline      → text flow, content-sized
+
+---------------------------------------------------------
+
+=========================================================
    DISPLAY PROPERTY – block, inline, inline-block
 ========================================================= 
 

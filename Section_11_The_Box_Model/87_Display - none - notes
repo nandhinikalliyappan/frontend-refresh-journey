@@ -1,0 +1,40 @@
+=========================================================
+   OVERVIEW: display: none
+   =========================================================
+
+Definition:
+display: none completely removes an element from the page layout.
+The element is not visible and does not occupy any space.
+
+---------------------------------------------------------
+WHAT HAPPENS WHEN display: none IS USED
+---------------------------------------------------------
+- Element is not rendered on the page
+- Element takes up NO space
+- Other elements behave as if it does not exist
+- Width, height, margin, and padding have no effect
+
+---------------------------------------------------------
+display: none vs visibility: hidden
+---------------------------------------------------------
+display: none
+- Element is removed from layout
+- No space is reserved
+
+visibility: hidden
+- Element is invisible
+- Space is still reserved
+
+---------------------------------------------------------
+COMMON USE CASES
+---------------------------------------------------------
+- Hiding elements temporarily
+- Showing/hiding content using JavaScript
+- Responsive design (hide elements on small screens)
+- Debugging layouts
+
+---------------------------------------------------------
+IMPORTANT NOTE
+---------------------------------------------------------
+An element with display: none cannot be focused or interacted with.
+It is completely removed from the document flow.
