@@ -1,0 +1,52 @@
+p {
+    font-size: 30px;
+}
+
+/*This describes the normal behaviour of block and inline element*/
+h2.block {
+    border: 10px solid green;
+    padding: 50px;
+    margin: 30px;
+    width: 210px;
+    height: 210px;
+}
+
+#block {
+    border: 10px solid green;
+    padding: 50px;
+    margin: 30px;
+    width: 200px;
+    /*won't be applied ince it's a inline element*/
+    height: 200px;
+    /*won't be applied ince it's a inline element*/
+}
+
+/*In this example block is acting as a inline level element now the content an width won't be applied*/
+.blockasinline {
+    border: 10px solid green;
+    padding: 50px;
+    margin: 30px;
+    width: 210px;
+    height: 210px;
+    display: inline;
+}
+
+/*In this example span is acting as a block level element*/
+#inlineasblock {
+    border: 10px solid green;
+    padding: 50px;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+span#inline-block {
+    border: 10px solid green;
+    padding: 50px;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    /*height and width will be applied but won't start with new line*/
+}

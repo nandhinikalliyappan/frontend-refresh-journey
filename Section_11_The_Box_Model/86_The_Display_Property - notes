@@ -1,0 +1,90 @@
+=========================================================
+   DISPLAY PROPERTY – block, inline, inline-block
+========================================================= 
+
+
+---------------------------------------------------------
+1️⃣ display: block
+---------------------------------------------------------
+
+What is a block element?
+
+- A block element always starts on a new line
+- It takes the full width of its parent container
+
+Key behaviors:
+- Starts on a new line
+- Takes 100% available width by default
+- Width and height can be set
+- Margin and padding work on all sides
+
+Common block elements:
+div, p, h1–h6, section, article
+
+Example:
+div {
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+Visual idea:
+[ BLOCK ELEMENT (full width) ]
+[ NEXT BLOCK ELEMENT        ]
+
+
+
+---------------------------------------------------------
+2️⃣ display: inline
+---------------------------------------------------------
+What is an inline element?
+
+- An inline element stays inside a line of text
+- It takes only as much width as its content
+
+Key behaviors:
+- Does NOT start on a new line
+- Width is based on content only
+- Width and height cannot be applied
+- Padding and margin work only on left and right
+- Top and bottom padding/margin have no effect
+
+Common inline elements:
+span, a, strong, em
+
+Example:
+span {
+    display: inline;
+    width: 200px;   /* ignored */
+    height: 100px;  /* ignored */
+}
+
+Visual idea:
+Text [INLINE] more text [INLINE]
+
+
+
+---------------------------------------------------------
+3️⃣ display: inline-block
+--------------------------------------------------------- 
+
+What is inline-block?
+
+- inline-block is a mix of inline and block behavior
+
+Key behaviors:
+- Stays in the same line (like inline)
+- Allows width and height (like block)
+- Margin and padding work on all sides
+- Does NOT take full width
+
+Example:
+div {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+}
+
+Visual idea:
+[ BOX ] [ BOX ] [ BOX ]
+
