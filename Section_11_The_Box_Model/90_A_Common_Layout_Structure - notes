@@ -1,0 +1,21 @@
+   ALIGNMENT USING margin-left
+   =========================================================
+
+   Using the same margin-left value on multiple elements
+   aligns them uniformly from the left side, creating a
+   consistent vertical line.
+
+   This helps keep layouts neat and readable, especially
+   for lists, labels, and grouped content.
+
+   Example:
+
+
+.item {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+<div class="item">First item</div>
+<div class="item">Second item</div>
+<div class="item">Third item</div>
