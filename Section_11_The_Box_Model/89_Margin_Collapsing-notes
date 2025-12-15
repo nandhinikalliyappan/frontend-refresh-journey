@@ -1,0 +1,44 @@
+  =========================================================
+   OVERVIEW: Margin Collapsing
+
+   Margin collapsing is a CSS behavior where vertical margins
+   (top and bottom) of elements that touch each other merge
+   into a single margin. Instead of adding, the browser
+   applies only the largest margin value.
+
+   It occurs between:
+   - Adjacent sibling elements
+   - Parent and first/last child (when no border, padding,
+     or inline content exists)
+   - Empty block elements
+
+   NOTE:
+   - Only vertical margins collapse
+   - Horizontal margins never collapse
+   ========================================================= 
+
+.box1 {
+    margin-bottom: 40px;
+}
+
+.box2 {
+    margin-top: 20px;
+}
+
+.parent {
+    margin-top: 30px;
+}
+
+.child {
+    margin-top: 15px;
+}
+
+.empty-box {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* =========================================================
+   KEY POINT:
+   Touching vertical margins merge, and only the largest
+   margin value is applied. Margin collapsing can be prevented
