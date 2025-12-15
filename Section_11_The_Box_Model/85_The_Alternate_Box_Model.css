@@ -1,0 +1,61 @@
+/* Common styles */
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: lightblue;
+    margin-bottom: 40px;
+}
+
+/* Default Box Model */
+.default-box {
+    box-sizing: content-box;
+}
+
+/*/* ==================== DEFAULT BOX MODEL (content-box) ==================== 
+
+.default-box {
+    box-sizing: content-box;
+}
+
+/* What this does:
+   → box-sizing: content-box;
+   → This is the default box model in CSS.
+
+   Behavior:
+   - The width (200px) applies ONLY to the content
+   - Padding and border are added OUTSIDE the width
+
+   Result:
+   - Content width = 200px
+   - Padding        = 40px
+   - Border         = 10px
+
+   Total width calculation:
+   = 200 (content)
+   + 40  (padding)
+   + 10  (border)
+   = 250px
+*/
+
+
+/* Alternate Box Model */
+.alternate-box {
+    box-sizing: border-box;
+}
+/*box-sizing: border-box;
+
+/* What it does:
+   → Enables the alternate box model.
+   
+   With box-sizing: border-box:
+   - The width (e.g., 200px) now includes:
+       • content
+       • padding
+       • border
+       
+   Result:
+   - Total width is fixed (200px)
+   - Padding and border fit inside the box
+   - Content area shrinks automatically to accommodate padding & border
+*/
