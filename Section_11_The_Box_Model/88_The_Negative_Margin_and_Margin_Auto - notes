@@ -1,0 +1,73 @@
+=========================================================
+   CSS MARGINS: Negative Margin & Margin Auto
+   ========================================================= 
+
+---------------------------------------------------------
+1. Negative Margin
+--------------------------------------------------------- 
+
+Definition:
+- Normally, margin adds space around an element.
+- Negative margin subtracts space, pulling elements closer together or overlapping them.
+- Can be applied to all four sides: margin-top, margin-right, margin-bottom, margin-left.
+
+Syntax:
+selector {
+    margin-top: -10px;
+    margin-right: -20px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+}
+
+Effects:
+1. Pulls the element toward adjacent elements.
+2. Can cause overlapping content.
+3. Works in any direction (top, right, bottom, left).
+4. May affect parent container's size if margins are large.
+
+Example:
+<div style="background: lightblue; width: 100px; height: 100px; margin-bottom: -20px;">Box 1</div>
+<div style="background: coral; width: 100px; height: 100px;">Box 2</div>
+- Box 2 moves upwards and overlaps Box 1 due to the negative bottom margin.
+
+Common Use Cases:
+- Pulling elements closer for tight designs.
+- Overlapping images or cards.
+- Adjusting spacing when default padding/margin is too much.
+
+
+---------------------------------------------------------
+2. Margin Auto
+--------------------------------------------------------- 
+Definition:
+- margin: auto automatically distributes margin space.
+- Most commonly used for horizontal centering of block-level elements.
+- Only works when the element has a defined width.
+
+Syntax:
+selector {
+    width: 200px;   /* required */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* shorthand */
+selector {
+    width: 200px;
+    margin: 0 auto; /* 0 = top & bottom, auto = left & right */
+}
+
+Effects:
+1. Horizontally centers the element within its parent.
+2. Top and bottom margins are not affected unless explicitly set.
+3. Maintains responsive spacing when parent width changes.
+
+Example:
+<div style="width: 200px; height: 100px; background: lightgreen; margin: 0 auto; text-align: center; line-height: 100px;">
+    Centered Box
+</div>
+- The box is perfectly centered horizontally in the parent container.
+
+Common Use Cases:
+- Centering cards, divs, forms, images inside a container.
+- Creating fixed-width layouts with centered content.
+- Used in responsive design with max-width and padding.
