@@ -1,0 +1,54 @@
+   =========================================================
+   Box Shadow
+   =========================================================
+
+   box-shadow is used to add shadow effects around elements,
+   giving depth and a raised or floating appearance.
+
+   Syntax:
+   box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+   ---------------------------------------------------------
+   VALUES EXPLANATION
+   ---------------------------------------------------------
+   offset-x:
+   - Horizontal position of the shadow
+   - Positive → right
+   - Negative → left
+
+   offset-y:
+   - Vertical position of the shadow
+   - Positive → down
+   - Negative → up
+
+   blur-radius:
+   - Controls softness of the shadow
+   - Larger value → softer shadow
+
+   spread-radius:
+   - Controls size of the shadow
+   - Positive → expands shadow
+   - Negative → shrinks shadow
+
+   color:
+   - Shadow color (rgba is commonly used)
+
+   ---------------------------------------------------------
+   COMMON EXAMPLES
+   ---------------------------------------------------------
+   Light shadow:
+   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+   Deep shadow:
+   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+
+   Inner shadow:
+   box-shadow: inset 0 2px 6px rgba(0,0,0,0.3);
+
+   ---------------------------------------------------------
+   EASY RULE TO REMEMBER
+   ---------------------------------------------------------
+   Small blur → sharp shadow
+   Large blur → soft shadow
+   inset → shadow inside the element
+   ========================================================= 
