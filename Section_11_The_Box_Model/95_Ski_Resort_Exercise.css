@@ -1,0 +1,41 @@
+.body{
+    background-color: #463d36;
+    color: #463d36;
+     font-family: sans-serif;
+
+}
+
+div{
+ width: 600px; 
+ background-color: white;
+ margin: 100px auto;
+ padding: 40px;
+ border-radius: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #a6192e;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+#peel{
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0 0 28px 0;
+    font-size: 30px;
+}
+
+#season{
+    font-size: 28px;
+}
+
+button{
+    background-color: #463d36;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 30px 40px;
+    font-weight: bold;
+}
