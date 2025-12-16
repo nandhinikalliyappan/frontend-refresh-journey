@@ -1,0 +1,22 @@
+   =========================================================
+   Min-width and max-width
+   =========================================================
+
+   🔹 min-width:
+     • Sets the minimum width an element can shrink to
+     • Element will never become smaller than this value
+     • Useful for maintaining readability on small screens
+
+   🔹 max-width:
+     • Sets the maximum width an element can grow to
+     • Element will never become wider than this value
+     • Useful for preventing overly wide content on large screens
+
+   🔹 Common Usage:
+     • Responsive layouts
+     • Centered content that adapts to different screen sizes
+     • Cards, containers, and main content areas
+
+   🔹 Easy Rule to Remember:
+     • min-width → stops shrinking
+     • max-width → stops growing
