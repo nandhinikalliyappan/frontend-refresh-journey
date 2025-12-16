@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with oerflow</title>
+    <link rel="stylesheet" href="94_Working_With_Overflow.css">
+</head>
+
+<body>
+    <!-- Change the class name to test overflow behavior:
+     visible | hidden | scroll | auto | x | y -->
+
+    <div class="box visible">
+        This is long content to test overflow behavior.
+        Add more text here so it exceeds the container
+        width and height and clearly shows how overflow
+        works in different situations.
+    </div>
+
+    <div class="box hidden">
+        This is long content to test overflow behavior.
+        Extra content will be clipped and not visible.
+        and clearly shows how overflow
+        works in different situations
+    </div>
+
+    <div class="box scroll">
+        This is long content to test overflow behavior.
+        Scrollbars will appear even if content fits.
+        and clearly shows how overflow
+        works in different situations
+    </div>
+
+    <div class="box x">
+        This is a very very very very very very very long single line text to test horizontal overflow.and clearly shows
+        how overflow
+        works in different
+        situations.ThisIsAVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongSingleLineTextWithoutAnySpacesSoThatItForcesHorizontalOverflowAndMakesTheBottomScrollbarVisibleForOverflowXPractice1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+    </div>
+
+    <div class="box y">
+        Line 1<br>
+        Li
+        ne 2<br>
+        Line 3<br>
+        Line 4<br>
+        Line 5<br>
+        Line 6<br>
+        Line 7<br>
+    </div>
+
+    <p class="box z">
+        ThisIsAVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongSingleLineTextThatForcesHorizontalScrollingBecauseItHasNoSpacesAtAllAndKeepsGoingAndGoingAndGoingAndGoingAndGoing<br>
+        Line 1<br>
+        Line 2<br>
+        Line 3<br>
+        Line 4<br>
+        Line 5<br>
+        Line 6<br>
+        Line 7<br>
+        Line 8<br>
+        Line 9<br>
+        Line 10<br>
+        Line 11<br>
+        Line 12<br>
+    </p>
+
+
+
+</body>
+
+</html>

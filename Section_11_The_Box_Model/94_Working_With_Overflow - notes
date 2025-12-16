@@ -1,0 +1,117 @@
+   =========================================================
+   CSS OVERFLOW
+   =========================================================
+
+   DEFINITION:
+   The overflow property controls when content
+   is larger than its container.
+
+   It decides whether extra content is:
+   - Visible
+   - Hidden
+   - Scrollable
+
+
+
+ =========================================================
+   OVERFLOW VALUES
+   ========================================================= 
+
+ 1. visible (default)
+   -> Content overflows outside the container
+   ->  No clipping, no scrollbars
+
+        .visible {
+            overflow: visible;
+        }
+
+ 2. hidden
+  -> Extra content is clipped
+  -> Content outside the box is0000 not visible
+
+        .hidden {
+            overflow: hidden;
+        }
+
+ 3. scroll
+  -> Scrollbars are always shown
+  -> Allows scrolling even if content fits
+
+        .scroll {
+            overflow: scroll;
+        }
+
+ 4. auto
+   -> Scrollbars appear only when content overflows
+   -> Most commonly used value
+
+        .auto {
+            overflow: auto;
+        }
+
+
+ =========================================================
+   HORIZONTAL & VERTICAL OVERFLOW
+   ========================================================= 
+
+
+overflow-x → controls left & right overflow
+overflow-y → controls top & bottom overflow
+
+
+.axis-control {
+    overflow-x: auto;    horizontal scroll if needed 
+    overflow-y: hidden;  vertical content clipped 
+}
+
+
+ =========================================================
+   IMPORTANT NOTES
+   =========================================================
+
+   • Overflow works only when width and/or height is set
+   • Default overflow value is visible
+   • overflow: hidden is commonly used to:
+       - Crop images
+       - Clear floating elements
+       - Hide unwanted content
+   • overflow: auto is best for responsive layouts
+   • overflow can prevent margin collapsing in some cases
+
+
+
+ =========================================================
+   SIMPLE PRACTICE BOX
+   ========================================================= 
+
+.box {
+    width: 220px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #333;
+    overflow: auto;
+}
+
+/* =========================================================
+   CSS OVERFLOW – SCROLLBAR SUMMARY
+
+   • overflow controls how extra content behaves
+   • overflow: scroll always shows BOTH scrollbars
+       - horizontal scrollbar → bottom (left ↔ right)
+       - vertical scrollbar   → right  (up ↕ down)
+
+   • To show ONLY ONE scrollbar, use axis-specific properties:
+       - overflow-x controls horizontal (bottom) scrollbar
+       - overflow-y controls vertical (right) scrollbar
+
+   • Examples:
+       overflow-x: scroll;
+       overflow-y: hidden;   → only bottom scrollbar
+
+       overflow-y: scroll;
+       overflow-x: hidden;   → only right scrollbar
+
+   • overflow: auto shows scrollbars only when needed
+   • overflow works only when width and/or height is set
+
+   ========================================================= */

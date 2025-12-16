@@ -1,0 +1,35 @@
+.box{
+    width: 200px;
+    height: 50px;
+    border: 4px solid gray;
+    margin: 100px auto;
+}
+
+.visible{
+    overflow: visible;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.scroll{
+    overflow: scroll; /*This shows BOTH scrollbars horizondall and vertical*/
+}
+
+.x{ /*Horizontal scroll bar will be visible*/
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.y /*Vertical scroll bar will be visible*/
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.z{ /*Both scroll bars will be visible*/
+    height:150px;
+    overflow:scroll;
+}
