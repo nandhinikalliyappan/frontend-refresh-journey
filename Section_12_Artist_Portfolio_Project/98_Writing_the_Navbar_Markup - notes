@@ -1,0 +1,25 @@
+    =========================================================
+     HTML <header> ELEMENT
+     
+     The <header> element represents introductory content
+     for a page or a section.
+
+     It usually contains:
+     • Logo or site title
+     • Navigation (navbar)
+     • Headings
+     • Search bar or icons
+
+     IMPORTANT POINTS:
+     • <header> is a semantic element (meaningful to browsers)
+     • It improves accessibility and SEO
+     • A page can have multiple <header> elements
+     • <header> should NOT contain main page content
+     • <header> cannot contain another <header>, <footer>,
+       or <main> element
+
+     COMMON USAGE:
+     • Top section of a webpage
+     • Section header inside <section> or <article>
+
+     ========================================================= 
