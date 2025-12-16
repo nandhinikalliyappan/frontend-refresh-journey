@@ -1,0 +1,40 @@
+ =========================================================
+   Rounding Elements using border-radius
+   =========================================================
+
+   border-radius is a CSS property used to round the corners
+   of an element. It affects the outer edges of the element,
+   including the background and border.
+
+   HOW IT WORKS:
+   - The value controls how curved the corners are
+   - Larger values create more rounded corners
+   - Smaller values create slightly rounded corners
+
+   COMMON VALUES:
+   - border-radius: 4px;
+     → Subtle rounding (inputs, forms)
+
+   - border-radius: 8px or 12px;
+     → Smooth rounded corners (cards, containers)
+
+   - border-radius: 50%;
+     → Creates a perfect circle when width and height are equal
+
+   INDIVIDUAL CORNER CONTROL:
+   border-radius follows this order:
+   top-left → top-right → bottom-right → bottom-left
+
+   Example:
+   border-radius: 10px 20px 30px 40px;
+
+   IMPORTANT POINTS:
+   - Works on block and inline-block elements
+   - Border and background are both rounded
+   - Shape depends on element width and height
+   - Commonly used for buttons, cards, images, and inputs
+
+   EASY RULE:
+   Bigger value → more curve
+   50% → circle
+   =========================================================
