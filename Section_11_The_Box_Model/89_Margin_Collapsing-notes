@@ -1,5 +1,5 @@
   =========================================================
-   OVERVIEW: Margin Collapsing
+   OVERVIEW -  Margin Collapsing
 
    Margin collapsing is a CSS behavior where vertical margins
    (top and bottom) of elements that touch each other merge
@@ -37,8 +37,3 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
-/* =========================================================
-   KEY POINT:
-   Touching vertical margins merge, and only the largest
-   margin value is applied. Margin collapsing can be prevented
