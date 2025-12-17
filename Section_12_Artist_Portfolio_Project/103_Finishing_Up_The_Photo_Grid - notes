@@ -1,0 +1,78 @@
+ =========================================================
+CSS NOTE: object-fit & object-fit: cover
+========================================================= 
+
+
+
+## About object-fit:
+
+object-fit is a CSS property that controls how an image or
+video fits inside its container.
+
+* Works only on <img> and <video>
+* Does NOT work on <div>
+* Requires fixed width and height
+* Similar to background-size but for media elements
+  
+
+
+
+## Understanding object-fit: cover:
+
+Think of cover as "zoom to fill".
+
+* The image is enlarged until the container is fully covered
+* Aspect ratio is preserved
+* Extra parts are cropped
+
+If container and image ratios differ, cropping will happen.
+
+
+## Why Cropping Occurs:
+
+Image and container usually have different aspect ratios.
+To avoid empty space, the browser zooms the image.
+Overflowing areas are hidden.
+
+
+## Required Conditions:
+
+* Must set BOTH width and height
+* Applies only to <img> and <video>
+  
+
+img {
+width: 300px;
+height: 200px;
+object-fit: cover;
+}
+
+
+
+## Default Crop Position:
+
+The center of the image stays visible by default.
+
+
+img {
+object-position: center; /* 50% 50% */
+}
+
+
+## Controlling Visible Area:
+
+Use object-position to decide which part is shown.
+
+img {
+object-fit: cover;
+object-position: top; /* top | bottom | left | right | center */
+}
+
+
+## Key Takeaways:
+
+* cover fills the entire container
+* No stretching or distortion
+* Cropping is expected behavior
+* Best for cards, banners, thumbnails
+  
