@@ -1,0 +1,31 @@
+   =========================================================
+   WHY border-bottom IS USED INSTEAD OF text-decoration
+
+   text-decoration: underline;
+   • Underline is part of the text itself
+   • Position, thickness, and spacing cannot be controlled
+   • Underline sits too close to text
+   • Affects descenders (g, y, p, j)
+
+   border-bottom:
+   • Gives full control over thickness, color, and spacing
+   • Can be placed away from the text using padding
+   • Looks consistent across fonts
+   • Easy to animate on hover
+   • Commonly used in navbars and links
+
+   COMPARISON:
+
+   text-decoration: underline;
+   → Simple underline, limited styling
+
+   border-bottom: 2px solid black;
+   → Custom underline with better control
+
+   COMMON USE CASES:
+   • Navigation menus
+   • Active link indicators
+   • Hover effects
+   • Modern UI designs
+
+   ========================================================= 
