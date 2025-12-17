@@ -1,0 +1,43 @@
+ =========================================================
+   CSS NOTES: Adjacent Sibling Combinator (+)
+
+   Definition:
+   The adjacent sibling combinator (+) selects an element that
+   comes immediately after another element and shares the same parent.
+
+   Syntax:
+   A + B
+
+   Meaning:
+   Selects element B only if it directly follows element A.
+
+   Rules:
+   - Both elements must have the same parent
+   - Only the immediate next sibling is selected
+   - If any element comes in between, it will not work
+
+   Example:
+   h1 + p {
+     color: red;
+   }
+
+   HTML:
+   <h1>Heading</h1>
+   <p>Selected paragraph</p>
+   <p>Not selected</p>
+
+   Explanation:
+   Only the first <p> immediately after <h1> is selected.
+
+   Use Cases:
+   - Styling heading + paragraph
+   - Adding spacing between consecutive elements
+   - Simple layout adjustments
+
+   Comparison:
+   +  Adjacent sibling → only next element
+   ~  General sibling  → all following siblings
+
+   Summary:
+   A + B selects B only when it immediately follows A.
+   ========================================================= 
