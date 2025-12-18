@@ -1,0 +1,63 @@
+/* =========================================================
+   CSS NOTES: Calculating Specificity
+
+   Specificity Levels (High → Low):
+   1. Inline styles
+   2. ID selectors (#id)
+   3. Class selectors, attributes, pseudo-classes
+   4. Element selectors, pseudo-elements
+
+   ---------------------------------------------------------
+   Inline Styles
+   ---------------------------------------------------------
+   - Written inside HTML using style=""
+   - Highest priority
+   - Overrides all selectors
+
+   ---------------------------------------------------------
+   ID Selectors
+   ---------------------------------------------------------
+   - Each #id increases ID specificity
+   - Beats class and element selectors
+
+   ---------------------------------------------------------
+   Class-Level Selectors
+   ---------------------------------------------------------
+   Includes:
+   - Classes (.box)
+   - Attributes ([type="text"])
+   - Pseudo-classes (:hover, :focus, :checked)
+
+   All are counted at the same level.
+
+   ---------------------------------------------------------
+   Element-Level Selectors
+   ---------------------------------------------------------
+   Includes:
+   - HTML elements (p, div, li)
+   - Pseudo-elements (::before, ::first-line)
+
+   Lowest priority level.
+
+   ---------------------------------------------------------
+   Comparison Rules
+   ---------------------------------------------------------
+   - Specificity is compared level by level
+   - Higher level wins immediately
+   - Order matters only if specificity is equal
+
+   ---------------------------------------------------------
+   Does NOT Affect Specificity
+   ---------------------------------------------------------
+   - Universal selector (*)
+   - Combinators (>, +, ~, space)
+   - Selector length or nesting
+
+   ---------------------------------------------------------
+   Golden Rule
+   ---------------------------------------------------------
+   More precise selector = higher specificity
+
+   ========================================================= 
+
+   -> Refer hand written notes for more structured calculation
