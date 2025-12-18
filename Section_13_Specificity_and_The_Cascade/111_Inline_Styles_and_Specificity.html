@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Style</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        .text {
+            color: green;
+        }
+
+        #main {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Inline Style Example</h2>
+
+    <p>This paragraph uses element selector (blue)</p>
+
+    <p class="text">
+        This paragraph uses class selector (green)
+    </p>
+
+    <p class="text" id="main" style="color: purple;">
+        Inline style overrides all → PURPLE
+    </p>
+
+</body>
+
+</html>

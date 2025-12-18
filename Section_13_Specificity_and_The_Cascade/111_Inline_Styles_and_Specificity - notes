@@ -1,0 +1,72 @@
+  =========================================================
+   CSS NOTES: Inline Styles & Specificity
+
+   What is an Inline Style?
+   -----------------------
+   An inline style is CSS written directly inside an HTML
+   element using the style attribute.
+
+   Example:
+   <p style="color: red;">Text</p>
+
+   ---------------------------------------------------------
+   Why Inline Styles Have Highest Priority
+   ---------------------------------------------------------
+   - Applied directly on the element
+   - No selector matching required
+   - Targets exactly one element
+   - Treated as an explicit instruction by the browser
+
+   Inline styles override:
+   - Element selectors (p, div, h1)
+   - Class selectors (.text)
+   - ID selectors (#main)
+
+   ---------------------------------------------------------
+   Inline Styles and Specificity (Conceptual)
+   ---------------------------------------------------------
+   Specificity is about how precisely a rule targets
+   an element.
+
+   Inline styles are the most precise because they:
+   - Apply to one exact element
+   - Have no ambiguity
+   - Do not depend on CSS selectors
+
+   Therefore, inline styles always win over normal CSS.
+
+   ---------------------------------------------------------
+   Example Scenario
+   ---------------------------------------------------------
+   p { color: blue; }
+   .text { color: green; }
+   #main { color: red; }
+
+   <p class="text" id="main" style="color: purple;">
+     Text
+   </p>
+
+   Result:
+   - Purple color is applied due to inline style.
+
+   ---------------------------------------------------------
+   Why Inline Styles Are Bad Practice
+   ---------------------------------------------------------
+   - Break separation of HTML and CSS
+   - Hard to maintain and reuse
+   - Difficult to override later
+   - Cause specificity conflicts
+
+   ---------------------------------------------------------
+   Important Note
+   ---------------------------------------------------------
+   Inline styles can be overridden only by !important,
+   which should be avoided in real projects.
+
+   ---------------------------------------------------------
+   One-Line Summary
+   ---------------------------------------------------------
+   Inline styles override all selector-based CSS rules
+   because they directly target the element.
+
+   ========================================================= 
