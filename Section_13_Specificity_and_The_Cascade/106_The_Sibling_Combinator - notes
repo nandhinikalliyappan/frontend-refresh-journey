@@ -1,0 +1,42 @@
+   =========================================================
+   CSS NOTES: Sibling (General Sibling) Combinator (~)
+
+   Definition:
+   The sibling combinator (~) selects all elements that come
+   after another element and share the same parent.
+
+   Syntax:
+   A ~ B
+
+   Meaning:
+   Selects every B element that appears after A.
+
+   Rules:
+   - Both elements must have the same parent
+   - B must come after A in the HTML
+   - Selects ALL following siblings
+   - Does not select previous elements
+
+   Example:
+   h2 ~ p {
+     color: green;
+   }
+
+   HTML:
+   <h2>Heading</h2>
+   <p>Paragraph 1</p>
+   <p>Paragraph 2</p>
+   <p>Paragraph 3</p>
+
+   Class Example:
+   .box ~ .box {
+     border: 1px solid black;
+   }
+
+   Difference from Adjacent Sibling:
+   +  Adjacent sibling → only next element
+   ~  Sibling combinator → all following elements
+
+   Summary:
+   A ~ B selects all B elements that come after A.
+   ========================================================= 
