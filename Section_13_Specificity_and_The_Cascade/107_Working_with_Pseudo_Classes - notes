@@ -1,0 +1,120 @@
+ =========================================================
+   CSS NOTES: Common Pseudo-Classes
+
+   Pseudo-classes are used to define a special state of an element.
+   They start with a colon (:)
+
+   ---------------------------------------------------------
+   :hover
+   ---------------------------------------------------------
+   Applies when the user places the mouse over an element.
+
+   Example:
+   button:hover {
+     background-color: blue;
+   }
+
+   ---------------------------------------------------------
+   :active
+   ---------------------------------------------------------
+   Applies when an element is being clicked.
+
+   Example:
+   button:active {
+     transform: scale(0.95);
+   }
+
+   ---------------------------------------------------------
+   :focus
+   ---------------------------------------------------------
+   Applies when an input or element is focused (clicked or tabbed).
+
+   Example:
+   input:focus {
+     border-color: green;
+   }
+
+  -> Only focusable elements can get focus:
+
+        inputs
+
+        buttons
+
+        links
+
+Headings (h1–h6) are not focusable by default
+
+   ---------------------------------------------------------
+   :disabled
+   ---------------------------------------------------------
+   Applies to form elements that are disabled.
+
+   Example:
+   input:disabled {
+     background-color: lightgray;
+   }
+
+   ---------------------------------------------------------
+   :enabled
+   ---------------------------------------------------------
+   Applies to form elements that are enabled by default.
+
+   Example:
+   input:enabled {
+     border: 2px solid black;
+   }
+
+   ---------------------------------------------------------
+   :placeholder-shown
+   ---------------------------------------------------------
+   Applies when an input is showing placeholder text.
+
+   Example:
+   input:placeholder-shown {
+     border-color: red;
+   }
+
+   ---------------------------------------------------------
+   :visited
+   ---------------------------------------------------------
+   Applies to links that have already been visited.
+
+   Example:
+   a:visited {
+     color: purple;
+   }
+
+   ---------------------------------------------------------
+   :first-of-type
+   ---------------------------------------------------------
+   Selects the first element of its type among siblings.
+
+   Example:
+   p:first-of-type {
+     color: blue;
+   }
+
+   ---------------------------------------------------------
+   :last-of-type
+   ---------------------------------------------------------
+   Selects the last element of its type among siblings.
+
+   Example:
+   p:last-of-type {
+     color: red;
+   }
+
+   ---------------------------------------------------------
+   :nth-of-type(n)
+   ---------------------------------------------------------
+   Selects elements based on position of the same type.
+
+   Example:
+   li:nth-of-type(2) {
+     font-weight: bold;
+   }
+
+   Summary:
+   Pseudo-classes style elements based on state, position,
+   or user interaction.
+   ========================================================= 
