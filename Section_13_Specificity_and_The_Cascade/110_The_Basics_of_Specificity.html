@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Specificity</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        /* Class selector */
+        .text {
+            color: green;
+        }
+
+        /* ID selector */
+        #main {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This paragraph uses element selector (blue)</p>
+
+    <p class="text">
+        This paragraph uses class selector (green)
+    </p>
+
+    <p class="text" id="main">
+        This paragraph has element + class + id → RED wins
+    </p>
+</body>
+
+</html>
