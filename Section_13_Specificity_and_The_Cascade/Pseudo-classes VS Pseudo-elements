@@ -1,0 +1,70 @@
+ =========================================================
+   CSS NOTES: Pseudo-Class vs Pseudo-Element
+
+   Pseudo-Class:
+   - Styles an element based on its state or position
+   - Applies to the entire element
+   - Triggered by user interaction or condition
+   - Uses single colon (:)
+
+    Common Categories:
+    1. User interaction:
+        :hover, :active, :focus, :visited
+
+    2. Form states:
+        :enabled, :disabled, :checked, :required
+
+    3. Structural positions:
+        :first-child, :last-child,
+        :first-of-type, :nth-child(),
+        :nth-of-type()
+
+    Syntax:
+    element:pseudo-class
+
+    Example:
+    button:hover {
+        background-color: blue;
+   }----------------------------------
+
+   Pseudo-Element:
+   - Styles a specific part of an element
+   - Applies to only part of the content
+   - Does not depend on state
+   - Uses double colon (::)
+
+    It styles WHAT PART:
+   - First line of text
+   - First letter
+   - Placeholder text
+   - Selected text
+   - Generated content
+
+   Characteristics:
+   - Applies to PART of an element
+   - Does NOT depend on state
+   - Always exists with the element
+   - Uses double colon (::)
+
+   Common Types:
+   ::first-line
+   ::first-letter
+   ::before
+   ::after
+   ::placeholder
+   ::selection
+
+   Syntax:
+   element::pseudo-element
+
+   Example:
+   p::first-letter {
+     font-size: 32px;
+   }
+   ---------------------------------------------------------
+
+   Key Difference:
+   - Pseudo-class → WHEN / WHICH element
+   - Pseudo-element → WHICH PART of the element
+
+   ========================================================= 

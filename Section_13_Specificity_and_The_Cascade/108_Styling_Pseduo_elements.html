@@ -1,0 +1,100 @@
+-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Class vs Pseudo Element</title>
+
+    <style>
+        /* -------- PSEUDO-CLASSES -------- */
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        input:focus {
+            border: 2px solid green;
+            outline: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        p:first-of-type {
+            color: blue;
+        }
+        /*It selects the first element of a specific type among its siblings.*/
+
+        li:nth-of-type(2) {
+            font-weight: bold;
+        }
+
+        /* -------- PSEUDO-ELEMENTS -------- */
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            color: red;
+        }
+
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo-Classes</h2>
+
+    <button>Hover & Click Me</button>
+    <br><br>
+
+    <input type="text" placeholder="Focus here">
+    <br><br>
+
+    <a href="https://example.com" target="_blank">Visit this link</a>
+
+    <h2>Paragraphs</h2>
+    <p>
+        This is the first paragraph. It has multiple lines so that the first line can be clearly styled.
+        Notice how the first line will appear bold and maybe a different color, while the rest remains normal.
+        You can continue typing more text to make the paragraph even longer to see the effect.
+    </p>
+
+    <p>
+        This is the first paragraph. It has multiple lines so that the first line can be clearly styled.
+        Notice how the first line will appear bold and maybe a different color, while the rest remains normal.
+        You can continue typing more text to make the paragraph even longer to see the effect.
+    </p>
+
+
+    <h2>List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2 (nth-of-type)</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p>
+        Select this text with your mouse to see ::selection in action.
+    </p>
+
+</body>
+
+</html>

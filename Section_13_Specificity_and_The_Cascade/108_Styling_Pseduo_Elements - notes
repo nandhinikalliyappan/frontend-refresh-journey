@@ -1,0 +1,74 @@
+ =========================================================
+   CSS NOTES: Pseudo-Elements Styling
+
+   Pseudo-elements are used to style specific parts of an element.
+   They start with double colon (::)
+
+   ---------------------------------------------------------
+   ::first-line
+   ---------------------------------------------------------
+   Styles ONLY the first line of a block-level element.
+   Depends on screen size and font size.
+
+   Example:
+   p::first-line {
+     color: blue;
+     font-weight: bold;
+   }
+
+   ---------------------------------------------------------
+   ::first-letter
+   ---------------------------------------------------------
+   Styles ONLY the first letter of a block-level element.
+
+   Example:
+   p::first-letter {
+     font-size: 32px;
+     color: red;
+   }
+
+   ---------------------------------------------------------
+   :first-of-type (Pseudo-class)
+   ---------------------------------------------------------
+   Selects the first element of its type among siblings.
+
+   Example:
+   p:first-of-type {
+     color: green;
+   }
+
+   ---------------------------------------------------------
+   ::placeholder
+   ---------------------------------------------------------
+   Styles placeholder text inside input or textarea.
+
+   Example:
+   input::placeholder {
+     color: gray;
+     font-style: italic;
+   }
+
+   ---------------------------------------------------------
+   ::selection
+   ---------------------------------------------------------
+   Styles text when the user selects (highlights) it.
+
+   Example:
+   ::selection {
+     background-color: yellow;
+     color: black;
+   }
+
+   ---------------------------------------------------------
+   Key Differences:
+   ---------------------------------------------------------
+   :pseudo-class   → styles element state or position
+   ::pseudo-element → styles part of an element
+
+   ---------------------------------------------------------
+   Summary:
+   ---------------------------------------------------------
+   Pseudo-elements allow fine control over specific parts
+   like first line, first letter, placeholder text,
+   and selected text.
+   ========================================================= 
