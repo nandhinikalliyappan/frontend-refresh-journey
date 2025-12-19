@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade – Full Demo</title>
+
+    <style>
+        /* --------------------------------------------------
+       1. Element selector (low specificity)
+    -------------------------------------------------- */
+        p {
+            color: blue;
+        }
+
+        /* --------------------------------------------------
+       2. Class selector (higher than element)
+    -------------------------------------------------- */
+        .text {
+            color: green;
+        }
+
+        /* --------------------------------------------------
+       3. ID selector (higher than class)
+    -------------------------------------------------- */
+        #main {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Cascade Demonstration</h2>
+
+    <p>
+        Element selector only → BLUE
+    </p>
+
+    <p class="text">
+        Class beats element → GREEN
+    </p>
+
+    <p class="text" id="main">
+        ID beats class, later ID wins → ORANGE
+    </p>
+
+</body>
+
+</html>

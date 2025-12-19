@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade - Example</title>
+    <style>
+        /* 1️⃣ Browser default styles exist (not shown here) */
+
+        /* 2️⃣ Element selector */
+        p {
+            color: blue;
+        }
+
+        /* 3️⃣ Class selector (more specific than element) */
+        .text {
+            color: green;
+        }
+
+        /* 4️⃣ ID selector (more specific than class) */
+        #main {
+            color: red;
+        }
+
+        /* 5️⃣ Same specificity as above, written later */
+        #main {
+            color: orange;
+        }
+
+        /* 6️⃣ !important overrides everything */
+        p {
+            color: purple !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Cascade Example</h2>
+
+    <p>This paragraph → affected by element + !important</p>
+
+    <p class="text">
+        This paragraph → class selector exists, but !important wins
+    </p>
+
+    <p class="text" id="main">
+        This paragraph → ID + class + element, but !important wins
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade – Correct Demo</title>
+
+    <style>
+        /* ---------------------------------------------
+       1. Element selector (lowest specificity)
+    --------------------------------------------- */
+        p {
+            color: blue;
+        }
+
+        /* ---------------------------------------------
+       2. Class selector (beats element)
+    --------------------------------------------- */
+        .text {
+            color: green;
+        }
+
+        /* ---------------------------------------------
+       3. ID selector (beats class)
+    --------------------------------------------- */
+        #main {
+            color: red;
+        }
+
+        /* ---------------------------------------------
+       4. SAME selector, written later
+          → source order wins
+    --------------------------------------------- */
+        #main {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Cascade Demonstration</h2>
+
+    <p>
+        Element selector only → BLUE
+    </p>
+
+    <p class="text">
+        Class beats element → GREEN
+    </p>
+
+    <p class="text" id="main">
+        ID beats class, later ID rule wins → PINK
+    </p>
+
+</body>
+
+</html>
