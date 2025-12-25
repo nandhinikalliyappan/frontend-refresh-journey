@@ -1,0 +1,134 @@
+=========================================================
+REM (ROOT EM) UNIT IN CSS
+=========================================================
+
+Definition:
+rem stands for "root em".
+It is a relative unit in CSS.
+
+rem is ALWAYS calculated based on the ROOT element’s
+font size (html element).
+
+It does NOT depend on parent elements.
+
+---------------------------------------------------------
+WHAT IS THE ROOT ELEMENT?
+---------------------------------------------------------
+
+- The root element in HTML is <html>
+- By default, browsers set:
+  html font-size = 16px
+
+All rem values are calculated using this root value.
+
+---------------------------------------------------------
+HOW REM WORKS
+---------------------------------------------------------
+
+Formula:
+1rem = root font size
+
+Example meaning:
+- Root font size = 16px
+- 1rem = 16px
+- 2rem = 32px
+- 0.5rem = 8px
+
+If the root font size changes, ALL rem values update
+automatically.
+
+---------------------------------------------------------
+REM VS EM (IMPORTANT DIFFERENCE)
+---------------------------------------------------------
+
+rem:
+- Depends only on root font size
+- Same size everywhere
+- Easy to manage
+- No compounding issue
+
+em:
+- Depends on parent font size
+- Can compound in nested elements
+- Harder to control in large layouts
+
+---------------------------------------------------------
+REM FOR FONT SIZE
+---------------------------------------------------------
+
+- Most commonly used for font sizes
+- Provides consistent typography
+- Easy to scale entire website by changing root size
+
+Example meaning:
+- If paragraph uses 1rem and root is 16px,
+  paragraph text will be 16px everywhere
+
+---------------------------------------------------------
+REM FOR SPACING (MARGIN & PADDING)
+---------------------------------------------------------
+
+- rem can also be used for:
+  * margin
+  * padding
+  * gap
+  * line-height
+
+Benefit:
+Spacing scales proportionally with typography.
+
+---------------------------------------------------------
+RESPONSIVE DESIGN WITH REM
+---------------------------------------------------------
+
+Why rem is powerful:
+- Change root font size using media queries
+- Entire layout scales automatically
+
+Example meaning:
+- Desktop root = 16px
+- Mobile root = 14px
+- All rem-based elements adjust automatically
+
+---------------------------------------------------------
+ADVANTAGES OF REM
+---------------------------------------------------------
+
+- Predictable and consistent
+- Easy to maintain
+- Ideal for responsive typography
+- Improves accessibility
+- No nesting side effects
+
+---------------------------------------------------------
+DISADVANTAGES OF REM
+---------------------------------------------------------
+
+- Depends on root font size
+- Less control for isolated components
+- Requires understanding of root scaling
+
+---------------------------------------------------------
+WHEN TO USE REM
+---------------------------------------------------------
+
+Use rem when:
+- Setting font sizes
+- Creating scalable layouts
+- Building design systems
+- Maintaining consistent spacing
+
+Avoid rem when:
+- You need component-level scaling
+- Parent-based sizing is required
+
+---------------------------------------------------------
+IMPORTANT NOTE
+---------------------------------------------------------
+
+Best Practice:
+- Use rem for font sizes and spacing
+- Use px only when exact control is needed
+
+rem is the most recommended unit for modern,
+responsive web typography.
