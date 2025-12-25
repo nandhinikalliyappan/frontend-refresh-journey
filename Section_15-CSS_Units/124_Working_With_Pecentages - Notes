@@ -1,0 +1,173 @@
+=========================================================
+PERCENTAGE (%) UNITS IN CSS
+=========================================================
+
+Definition:
+Percentage (%) is a relative unit in CSS.
+It ALWAYS depends on another value.
+
+The percentage value is calculated based on a reference
+value such as:
+- Parent element
+- Containing block
+- Root element
+- Specific CSS property rules
+
+So, percentage values are NOT fixed.
+
+---------------------------------------------------------
+IMPORTANT RULE
+---------------------------------------------------------
+
+Percentage does not have a single fixed meaning.
+Its behavior changes depending on the CSS property
+being used.
+
+---------------------------------------------------------
+HOW PERCENTAGE (%) WORKS
+---------------------------------------------------------
+
+- A percentage is calculated relative to another value
+- That reference value changes based on the property
+- Because of this, % can behave differently in different
+  situations
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR FONT SIZE
+---------------------------------------------------------
+
+Reference:
+Font size percentage is calculated based on the
+PARENT element’s font size.
+
+Example meaning (no code):
+- Parent font size = 16px
+- Child font size = 150%
+- Resulting font size = 24px
+
+Key Points:
+- % inherits and multiplies parent font size
+- Deep nesting can increase or decrease font size
+- Can become hard to manage in large layouts
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR WIDTH
+---------------------------------------------------------
+
+Reference:
+Width percentage is calculated based on the
+PARENT element’s width.
+
+Example meaning:
+- Parent width = 1000px
+- Child width = 50%
+- Resulting width = 500px
+
+Key Points:
+- Very useful for responsive layouts
+- Automatically adjusts when parent resizes
+- Commonly used in fluid layouts
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR HEIGHT
+---------------------------------------------------------
+
+Reference:
+Height percentage is calculated based on the
+PARENT element’s height.
+
+Important Rule:
+Percentage height works ONLY if the parent has a
+defined height.
+
+If the parent height is not set:
+- Percentage height will NOT work as expected
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR PADDING
+---------------------------------------------------------
+
+Important Behavior:
+Padding percentages are calculated based on the
+PARENT element’s WIDTH, not height.
+
+This applies to:
+- padding-top
+- padding-bottom
+- padding-left
+- padding-right
+
+Use Case:
+This behavior is commonly used for maintaining
+aspect ratios (like responsive images or videos).
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR MARGIN
+---------------------------------------------------------
+
+Reference:
+Margin percentages are calculated based on the
+PARENT element’s WIDTH.
+
+Applies to:
+- margin-top
+- margin-bottom
+- margin-left
+- margin-right
+
+Important Note:
+Even vertical margins use parent width, not height.
+
+---------------------------------------------------------
+PERCENTAGE (%) FOR POSITIONING
+---------------------------------------------------------
+
+When used with:
+- top
+- right
+- bottom
+- left
+
+Reference:
+Percentage is calculated based on the size of the
+containing block (usually the parent element).
+
+---------------------------------------------------------
+ADVANTAGES OF PERCENTAGE (%)
+---------------------------------------------------------
+
+- Responsive by nature
+- Adapts automatically to parent size
+- Useful for flexible layouts
+- Helps reduce media queries
+
+---------------------------------------------------------
+DISADVANTAGES OF PERCENTAGE (%)
+---------------------------------------------------------
+
+- Can be confusing due to different reference rules
+- Harder to predict in complex nested layouts
+- Not ideal for precise fixed sizing
+
+---------------------------------------------------------
+WHEN TO USE PERCENTAGE (%)
+---------------------------------------------------------
+
+Use percentage when:
+- Creating fluid layouts
+- Working with widths and spacing
+- Building responsive components
+
+Avoid percentage when:
+- Exact fixed size is required
+- Deep nesting causes confusion
+- Consistency across all screens is critical
+
+---------------------------------------------------------
+IMPORTANT NOTE
+---------------------------------------------------------
+
+Always remember:
+Percentage (%) depends on context.
+Understanding what it is relative to is key to
+using it correctly.
