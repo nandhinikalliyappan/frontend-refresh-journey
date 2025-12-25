@@ -1,0 +1,101 @@
+=========================================================
+ABSOLUTE UNITS (CSS FONT SIZE)
+=========================================================
+
+Definition:
+Absolute units are fixed size units.
+They do NOT depend on any other values.
+
+This means:
+- They do not depend on parent elements
+- They do not depend on root font size
+- They do not depend on screen size
+- They do not scale automatically
+
+Once an absolute value is set, the size stays the same
+unless it is changed manually.
+
+---------------------------------------------------------
+TYPES OF ABSOLUTE UNITS IN CSS
+---------------------------------------------------------
+
+1. px   → pixels (most commonly used)
+2. cm   → centimeters
+3. mm   → millimeters
+4. in   → inches
+5. pt   → points
+6. pc   → picas
+
+Note:
+In real-world web design, px is the only commonly used
+absolute unit. Other units are rarely used because screen
+measurements are not truly physical.
+
+---------------------------------------------------------
+PX (PIXELS) – DETAILED EXPLANATION
+---------------------------------------------------------
+
+What is a pixel?
+A pixel (px) is the smallest visible unit on a screen.
+It represents a single dot of display.
+
+How px works:
+- px gives an exact fixed size
+- It does not change based on parent elements
+- It does not change automatically for different devices
+
+Meaning:
+If you set a font size as 20px, the text will always be
+20px unless you manually change it.
+
+---------------------------------------------------------
+DEFAULT BROWSER BEHAVIOR
+---------------------------------------------------------
+
+- Most browsers set the default font size to 16px
+- Headings (h1, h2, etc.) appear larger because browsers
+  apply predefined pixel values to them
+
+---------------------------------------------------------
+ADVANTAGES OF PX
+---------------------------------------------------------
+
+- Easy to understand
+- Predictable and consistent
+- Gives precise control
+- Good for:
+  * Borders
+  * Icons
+  * Small UI elements
+  * Fixed spacing
+
+---------------------------------------------------------
+DISADVANTAGES OF PX
+---------------------------------------------------------
+
+- Not responsive by default
+- Does not scale well across different screen sizes
+- Not ideal for accessibility
+- Requires many media queries for responsiveness
+
+---------------------------------------------------------
+WHEN TO USE PX
+---------------------------------------------------------
+
+Use px when:
+- Exact size is required
+- The element should not scale
+- Working with small fixed components
+
+Avoid px for:
+- Body text
+- Large layouts
+- Responsive typography systems
+
+---------------------------------------------------------
+IMPORTANT NOTE
+---------------------------------------------------------
+
+Modern responsive design prefers relative units like
+em and rem because they adapt automatically to different
+screen sizes and user settings.
