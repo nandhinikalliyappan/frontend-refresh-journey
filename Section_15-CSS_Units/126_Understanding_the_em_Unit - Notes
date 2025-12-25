@@ -1,0 +1,184 @@
+=========================================================
+EM UNIT IN CSS
+=========================================================
+
+Definition:
+em is a relative unit in CSS.
+It is calculated based on the font size of the
+PARENT element.
+
+Unlike rem, em depends on its immediate parent.
+
+---------------------------------------------------------
+HOW EM WORKS
+---------------------------------------------------------
+
+Formula:
+1em = parent element’s font size
+
+Example meaning:
+- Parent font size = 16px
+- 1em = 16px
+- 1.5em = 24px
+- 0.75em = 12px
+
+If the parent font size changes, em values change
+automatically.
+
+---------------------------------------------------------
+EM FOR FONT SIZE
+---------------------------------------------------------
+
+Reference:
+Font size in em is always relative to the parent’s
+font size.
+
+Key Points:
+- Child elements inherit and multiply parent size
+- Each nesting level recalculates em again
+- This can lead to compounding
+
+---------------------------------------------------------
+NESTING & COMPOUNDING PROBLEM
+---------------------------------------------------------
+
+What is compounding?
+When multiple nested elements use em, the size keeps
+multiplying at each level.
+
+Example meaning:
+- Body font size = 16px
+- Parent div = 1.25em → 20px
+- Child p = 1.2em → 24px
+
+This makes large layouts harder to control.
+
+---------------------------------------------------------
+EM FOR MARGIN & PADDING
+---------------------------------------------------------
+
+Reference:
+When em is used for margin or padding, it is calculated
+based on the element’s OWN font size.
+
+This means:
+- If font size increases, spacing increases
+- If font size decreases, spacing decreases
+
+This behavior is useful for proportional spacing.
+
+---------------------------------------------------------
+EM FOR WIDTH & HEIGHT
+---------------------------------------------------------
+
+Reference:
+Width and height in em are calculated based on the
+element’s font size.
+
+Use Case:
+- Buttons
+- Badges
+- Components that scale with text
+
+---------------------------------------------------------
+EM VS REM (QUICK COMPARISON)
+---------------------------------------------------------
+
+em:
+- Relative to parent
+- Can compound
+- Context-based sizing
+- Useful for component-level scaling
+
+rem:
+- Relative to root
+- No compounding
+- Global consistency
+- Best for typography systems
+
+---------------------------------------------------------
+ADVANTAGES OF EM
+---------------------------------------------------------
+
+- Flexible and relative
+- Scales naturally with parent
+- Great for reusable components
+- Maintains proportional spacing
+
+---------------------------------------------------------
+DISADVANTAGES OF EM
+---------------------------------------------------------
+
+- Harder to predict in deep nesting
+- Compounding can cause issues
+- More complex to debug
+
+---------------------------------------------------------
+WHEN TO USE EM
+---------------------------------------------------------
+
+Use em when:
+- Building self-contained components
+- Spacing should scale with text
+- You want local control over sizing
+
+Avoid em when:
+- Building global typography systems
+- Deep nesting exists
+- Predictability is required
+
+---------------------------------------------------------
+IMPORTANT NOTE
+---------------------------------------------------------
+
+Best Practice:
+- Use rem for global font sizes
+- Use em for component-based spacing and sizing
+
+Understanding em is essential for mastering
+responsive and scalable CSS layouts.
+
+---------------------------------------------------------
+CORE RULE (MOST IMPORTANT)
+---------------------------------------------------------
+
+em does NOT behave the same for all properties.
+
+font-size using em:
+→ Depends on the PARENT element’s font size
+
+margin / padding using em:
+→ Depends on the ELEMENT’S OWN font size
+
+---------------------------------------------------------
+ELEMENT STRUCTURE USED FOR EXPLANATION
+---------------------------------------------------------
+
+div
+ └── p
+      └── ul
+
+Given:
+div font-size = 16px
+p font-size   = 1em
+ul font-size  = 2em
+
+---------------------------------------------------------
+FONT-SIZE CALCULATION (PARENT-RELATIVE)
+---------------------------------------------------------
+
+div:
+font-size = 16px
+
+p:
+1em = parent (div) font size
+1em = 16px × 1 = 16px
+
+ul:
+2em = parent (p) font size
+2em = 16px × 2 = 32px
+
+Final font sizes:
+div = 16px
+p   = 16px
+ul  = 32px
