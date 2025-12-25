@@ -1,0 +1,130 @@
+=========================================================
+VW AND VH UNITS IN CSS (VIEWPORT UNITS)
+=========================================================
+
+Definition:
+vw and vh are relative CSS units based on the viewport.
+
+Viewport:
+The visible area of the browser window (screen).
+
+vw = viewport width
+vh = viewport height
+
+---------------------------------------------------------
+BASIC MEANING
+---------------------------------------------------------
+
+1vw = 1% of the viewport width
+1vh = 1% of the viewport height
+
+These units do NOT depend on:
+- Parent elements
+- Root font size
+- Content size
+
+They depend ONLY on the viewport size.
+
+---------------------------------------------------------
+HOW VW WORKS
+---------------------------------------------------------
+
+vw is calculated based on the width of the viewport.
+
+Example meaning:
+- Viewport width = 1000px
+- 1vw = 10px
+- 50vw = 500px
+- 100vw = full screen width
+
+---------------------------------------------------------
+HOW VH WORKS
+---------------------------------------------------------
+
+vh is calculated based on the height of the viewport.
+
+Example meaning:
+- Viewport height = 800px
+- 1vh = 8px
+- 50vh = 400px
+- 100vh = full screen height
+
+---------------------------------------------------------
+COMMON USE CASES
+---------------------------------------------------------
+
+vw:
+- Full-width sections
+- Responsive font sizing
+- Layout scaling based on screen width
+
+vh:
+- Full-height sections
+- Hero banners
+- Centering content vertically
+
+---------------------------------------------------------
+VW AND VH FOR FONT SIZE
+---------------------------------------------------------
+
+Font size can also be set using vw or vh.
+
+Behavior:
+- Text scales based on screen size
+- Larger screen → larger text
+- Smaller screen → smaller text
+
+Caution:
+Using vw/vh for text can cause readability issues
+on very large or very small screens.
+
+---------------------------------------------------------
+ADVANTAGES OF VW & VH
+---------------------------------------------------------
+
+- Truly responsive
+- Independent of parent elements
+- Easy full-screen layouts
+- No nesting issues like em
+
+---------------------------------------------------------
+DISADVANTAGES OF VW & VH
+---------------------------------------------------------
+
+- Can break layouts on mobile browsers
+- Mobile address bar affects viewport height
+- Not ideal for body text
+- Requires careful testing
+
+---------------------------------------------------------
+VW VS VH (QUICK COMPARISON)
+---------------------------------------------------------
+
+vw:
+- Based on viewport width
+- Best for horizontal scaling
+
+vh:
+- Based on viewport height
+- Best for vertical scaling
+
+---------------------------------------------------------
+IMPORTANT MOBILE NOTE
+---------------------------------------------------------
+
+On mobile devices:
+- Browser UI (address bar) changes viewport size
+- 100vh may cause overflow issues
+
+Modern solution:
+- Use newer units like dvh, svh, lvh (advanced topic)
+
+---------------------------------------------------------
+KEY TAKEAWAY
+---------------------------------------------------------
+
+vw and vh are viewport-based units.
+They ignore parent and root elements.
+They are best for layout sizing, not main text.
+
+Use vw and vh carefully and intentionally.
