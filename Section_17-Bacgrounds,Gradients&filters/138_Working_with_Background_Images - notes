@@ -1,0 +1,111 @@
+/* CSS BACKGROUND-IMAGE */
+
+
+BACKGROUND-IMAGE
+================
+background-image places an image
+behind the content of an element.
+
+Key points
+----------
+- Does not affect layout
+- Does not take space
+- Appears behind text
+- Used only for decoration
+
+
+BASIC SYNTAX
+============
+.element {
+    background-image: url("image.jpg");
+}
+
+
+IMAGE SOURCES
+=============
+You can use
+- Local images
+- Online images
+- CSS gradients
+
+
+LOCAL IMAGE
+-----------
+.box {
+    background-image: url("images/bg.png");
+}
+
+Tip:
+If the image is not visible,
+check the image path and height.
+
+
+ONLINE IMAGE
+------------
+.card {
+    background-image: url("https://example.com/image.jpg");
+}
+
+Note:
+Requires internet connection.
+
+
+GRADIENT AS IMAGE
+-----------------
+.banner {
+    background-image: linear-gradient(red, orange);
+}
+
+Note:
+Gradients are also background images.
+
+
+MULTIPLE BACKGROUND IMAGES
+=========================
+The first image is on top.
+
+.layered {
+    background-image:
+        url("top.png"),
+        url("bottom.jpg");
+}
+
+
+REMOVE BACKGROUND IMAGE
+======================
+.clear-bg {
+    background-image: none;
+}
+
+
+BACKGROUND-IMAGE vs <img>
+========================
+Use background-image
+- Decorative images
+- No SEO
+- No layout impact
+
+Use <img>
+- Content images
+- SEO friendly
+- Part of layout
+
+
+COMMON MISTAKES
+===============
+- Wrong image path
+- Missing height
+- Expecting layout changes
+- Using background-image for content
+
+
+PRACTICE
+========
+Create a hero section
+with height 300px
+and a background image.
+
+.hero {
+    height: 300px;
+    background-image: url("hero.jpg");
+}

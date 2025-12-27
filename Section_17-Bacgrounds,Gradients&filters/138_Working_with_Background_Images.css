@@ -1,0 +1,9 @@
+.img1{
+    background-image: url(images/people.jpg);
+    height: 500px;
+}
+
+.img2{
+    background-image: url(images/sunset.jpg), url(images/woman.jpg);
+    height: 700px;
+}
