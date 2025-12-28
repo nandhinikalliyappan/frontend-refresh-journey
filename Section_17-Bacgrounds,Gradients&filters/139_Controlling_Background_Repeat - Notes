@@ -1,0 +1,79 @@
+ CSS BACKGROUND-REPEAT 
+
+
+BACKGROUND-REPEAT
+=================
+background-repeat controls
+how a background image repeats
+inside an element.
+
+By default,
+background images repeat
+both horizontally and vertically.
+
+
+DEFAULT BEHAVIOR
+================
+If background-repeat is not written,
+the image will repeat automatically.
+
+background-repeat: repeat;
+
+
+NO REPEAT
+=========
+The image appears only once.
+
+.box {
+    background-repeat: no-repeat;
+}
+
+
+REPEAT HORIZONTALLY
+==================
+The image repeats only from
+left to right.
+
+.box {
+    background-repeat: repeat-x;
+}
+
+
+REPEAT VERTICALLY
+================
+The image repeats only from
+top to bottom.
+
+.box {
+    background-repeat: repeat-y;
+}
+
+
+MULTIPLE BACKGROUND IMAGES
+=========================
+Each image can have
+its own repeat value.
+
+.layered {
+    background-repeat: no-repeat, repeat;
+}
+
+
+COMMON MISTAKES
+===============
+- Forgetting background-repeat
+- Expecting image to stop repeating by default
+- Using large images that do not need repeat
+
+
+PRACTICE
+========
+Add a small image as background.
+Try each repeat value one by one
+and observe the difference.
+
+.box {
+    height: 200px;
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+}
