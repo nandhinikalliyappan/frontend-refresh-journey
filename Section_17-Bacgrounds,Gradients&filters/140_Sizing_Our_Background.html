@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example for background size</title>
+    <style>
+        .img1{
+            background-image: url(images/people.jpg);
+            height: 300px;
+            width: 300px;
+            border: red 1px solid;
+            font-size: 20px;
+        }
+
+        .img2{
+            background-image: url(images/people.jpg);
+            height: 300px;
+            width: 300px;
+            border: red 1px solid;
+            font-size: 20px;
+            background-size: cover;
+        }
+
+        .img3{
+            background-image: url(images/people.jpg);
+            height: 300px;
+            width: 300px;
+            border: red 1px solid;
+            font-size: 20px;
+            background-size: contain;
+        }
+        .img4{
+           background-image: url(images/people.jpg);
+            height: 300px;
+            width: 300px;
+            border: red 1px solid;
+            font-size: 20px;
+            background-size: 50%;
+        }
+        .img5{
+             background-image: url(images/people.jpg);
+            height: 300px;
+            width: 300px;
+            border: red 1px solid;
+            font-size: 20px;
+            background-size: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example for background size</h1>
+    <p class="img1">this is the image got it from local - Example for
+        the <bold>default behaviour</bold> of size</p>
+
+    <h2>Example - cover</h2>
+     <p class="img2">this is the image got it from local - Example for
+         cover</p>
+
+    <h2>Example - contain</h2>
+     <p class="img3">this is the image got it from local - Example for
+         cover</p>
+
+    <h2>Example - percentage</h2>
+     <p class="img4">this is the image got it from local - Example for
+         percentage</p>
+
+     <h2>Example - Pixels</h2>
+     <p class="img5">this is the image got it from local - Example for
+         Pixels</p>
+    
+</body>
+</html>
