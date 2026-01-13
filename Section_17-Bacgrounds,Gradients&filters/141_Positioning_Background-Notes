@@ -1,0 +1,164 @@
+CSS BACKGROUND-POSITION
+======================
+Background-position decides WHERE the background image sits inside an element.
+
+Pause & think:
+Does this change image size? → No
+Does this stop repeating? → No
+
+
+DEFAULT BEHAVIOR
+================
+If you write nothing, the image starts from the top-left.
+
+Think:
+Top-left of image touches top-left of element.
+
+background-position: 0% 0%;
+
+
+KEYWORD POSITIONS
+=================
+Keywords act like magnets.
+
+left    → stick to left edge
+right   → stick to right edge
+top     → stick to top edge
+bottom  → stick to bottom edge
+center  → stick to center
+
+
+Try in your head:
+
+background-position: center;
+
+Question:
+Where is the image now?
+→ Center of the element
+
+
+Two-keyword examples:
+
+background-position: top right;
+background-position: bottom left;
+
+
+HOW KEYWORDS WORK
+=================
+Rule to remember:
+
+First value  → horizontal
+Second value → vertical
+
+Single keyword case:
+
+background-position: right;
+
+Think:
+Right edge horizontally,
+center vertically.
+
+
+PIXEL VALUES
+============
+Pixels = pushing the image.
+
+background-position: 20px 40px;
+
+Stop & imagine:
+- Push image 20px from left
+- Push image 40px from top
+
+
+PERCENTAGE VALUES
+=================
+Percentages align points, not edges.
+
+background-position: 50% 50%;
+
+Think:
+Image center meets
+element center.
+
+
+NEGATIVE VALUES
+===============
+Negative values pull the image outside the box.
+
+background-position: -20px -10px;
+
+Result:
+- Image moves left
+- Image moves up
+
+
+BACKGROUND-POSITION WITH COVER / CONTAIN
+========================================
+Size decides HOW BIG, position decides WHICH PART.
+
+background-size: cover;
+background-position: center;
+
+Question:
+Which part stays visible?
+→ Center of the image
+
+
+MULTIPLE BACKGROUND IMAGES
+=========================
+Each image can be positioned independently.
+
+.layered {
+    background-position: center, top left;
+}
+
+Think:
+First image → center
+Second image → top-left
+
+
+IMPORTANT RULE (LOCK THIS)
+==========================
+
+background-position → placement
+background-size     → scaling
+background-repeat   → tiling
+
+They NEVER replace each other.
+
+
+BEST PRACTICE
+=============
+Never rely on default positioning.
+
+Safe habit:
+
+.box {
+    background-position: center;
+}
+
+
+COMMON MISTAKES
+===============
+Ask yourself:
+- Did I forget default is top-left?
+- Am I expecting resize?
+- Did I mix up value order?
+- Did I forget position with cover?
+
+
+PRACTICE (DO THIS)
+==================
+Use one image.
+Change only background-position.
+Do not touch size or repeat.
+
+Observe:
+The image moves,
+but never resizes.
+
+.box {
+    height: 250px;
+    background-image: url("images/photo.jpg");
+    background-position: center;
+}
