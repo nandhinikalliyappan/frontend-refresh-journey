@@ -1,0 +1,126 @@
+CSS LINEAR-GRADIENT
+==================
+
+linear-gradient is a value of
+background-image.
+
+It creates a smooth transition
+between two or more colors
+in a straight line.
+
+No image file is required.
+
+
+BASIC SYNTAX
+============
+
+background-image: linear-gradient(direction, color1, color2);
+
+Example:
+.box {
+    background-image: linear-gradient(red, blue);
+}
+
+
+DEFAULT BEHAVIOR
+================
+
+If direction is not specified:
+
+→ Gradient flows from TOP to BOTTOM
+
+Equivalent to:
+linear-gradient(to bottom, red, blue);
+
+
+DIRECTION OPTIONS
+=================
+
+to top
+→ bottom → top
+
+to bottom
+→ top → bottom
+
+to left
+→ right → left
+
+to right
+→ left → right
+
+
+Examples:
+.box {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+.box {
+    background-image: linear-gradient(to top, yellow, green);
+}
+
+
+ANGLE BASED DIRECTION
+=====================
+
+You can use degrees instead of keywords.
+
+0deg   → bottom to top
+90deg  → left to right
+180deg → top to bottom
+270deg → right to left
+
+Example:
+.box {
+    background-image: linear-gradient(45deg, red, blue);
+}
+
+
+MULTIPLE COLORS
+===============
+
+You can add more than two colors.
+
+Example:
+.box {
+    background-image: linear-gradient(to right, red, orange, yellow);
+}
+
+
+VERTICAL GRADIENT
+=================
+
+Example:
+.box {
+    background-image: linear-gradient(to bottom, lightblue, navy);
+}
+
+
+IMPORTANT NOTES
+===============
+
+linear-gradient is treated as an image.
+So it works with:
+
+→ background-size
+→ background-position
+→ background-repeat
+
+
+COMMON MISTAKES
+===============
+
+- Forgetting height of element
+- Expecting gradient to affect layout
+- Using background-color instead of background-image
+
+
+BEST PRACTICE
+=============
+
+Always set height
+when practicing gradients.
+
+.box {
+    height: 200px;
+    background-image: linear-gradient(to right, red, blue);
+}
