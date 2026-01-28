@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Filters – Basic Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        /* FILTER ON IMAGE */
+        .image-example {
+            width: 300px;
+            filter: grayscale(100%);
+        }
+
+        /* FILTER ON BACKGROUND IMAGE */
+        .background-example {
+            width: 300px;
+            height: 200px;
+            margin-top: 30px;
+
+            background-image: url("images/food.jpg");
+            background-size: cover;
+            background-position: center;
+
+            filter: brightness(70%) blur(2px);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Filters – Simple Example</h2>
+
+    <p>Image with grayscale filter</p>
+    <img class="image-example" src="images/food.jpg" alt="Sample image">
+
+    <p>Background image with brightness filter</p>
+    <div class="background-example"></div>
+
+</body>
+</html>

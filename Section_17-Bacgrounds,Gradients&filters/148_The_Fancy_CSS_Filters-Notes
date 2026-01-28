@@ -1,0 +1,201 @@
+CSS FILTERS (FANCY VISUAL EFFECTS)
+=================================
+
+CSS filters are used to apply visual effects
+to images, backgrounds, or elements
+without editing the image file.
+
+They are mostly used for:
+- Image effects
+- Hover effects
+- UI polish
+- Modern design visuals
+
+
+BASIC SYNTAX
+------------
+
+filter: filter-function(value);
+
+Example:
+filter: blur(5px);
+
+
+COMMON CSS FILTERS
+==================
+
+1. BLUR
+-------
+
+Adds a blur effect to the element.
+
+filter: blur(5px);
+
+Effect:
+- Makes image or content look out of focus
+- Used for backgrounds, modals
+
+
+2. BRIGHTNESS
+-------------
+
+Controls how bright the element looks.
+
+filter: brightness(150%);
+
+Values:
+- 100% → normal
+- >100% → brighter
+- <100% → darker
+
+
+3. CONTRAST
+-----------
+
+Controls difference between light and dark.
+
+filter: contrast(120%);
+
+Higher value:
+- Sharper image
+Lower value:
+- Flat look
+
+
+4. GRAYSCALE
+------------
+
+Converts image to black and white.
+
+filter: grayscale(100%);
+
+Values:
+- 0% → normal color
+- 100% → fully grayscale
+
+Common use:
+- Hover effects
+
+
+5. SEPIA
+--------
+
+Adds a brown / old-photo look.
+
+filter: sepia(100%);
+
+Used for:
+- Vintage effects
+- Artistic images
+
+
+6. SATURATE
+-----------
+
+Controls color intensity.
+
+filter: saturate(200%);
+
+Values:
+- 100% → normal
+- >100% → more colorful
+- <100% → dull colors
+
+
+7. INVERT
+---------
+
+Inverts the colors.
+
+filter: invert(100%);
+
+Effect:
+- White becomes black
+- Black becomes white
+
+Used for:
+- Dark mode tricks
+- Creative effects
+
+
+8. OPACITY
+----------
+
+Controls transparency.
+
+filter: opacity(50%);
+
+Note:
+This is different from opacity property
+because filter affects only visuals.
+
+
+9. HUE-ROTATE
+-------------
+
+Rotates the color wheel.
+
+filter: hue-rotate(90deg);
+
+Effect:
+- Changes colors dramatically
+- Fun, fancy UI effects
+
+
+COMBINING MULTIPLE FILTERS
+==========================
+
+You can apply multiple filters together.
+
+Example:
+filter: grayscale(100%) blur(2px) brightness(120%);
+
+Order matters:
+Filters are applied from left to right.
+
+
+HOVER EFFECT EXAMPLE (COMMON USE)
+================================
+
+Normal:
+filter: grayscale(100%);
+
+On hover:
+filter: grayscale(0%);
+
+Used for:
+- Image galleries
+- Portfolio websites
+
+
+IMPORTANT NOTES
+===============
+
+- Filters do NOT affect layout
+- Filters are visual only
+- Too many filters can hurt performance
+- Mostly used on images and backgrounds
+
+
+INTERVIEW WORDING
+=================
+
+"CSS filters allow applying visual effects
+such as blur, brightness, contrast, and color
+adjustments directly using CSS, without
+modifying the original image."
+
+
+WHEN TO USE FILTERS
+===================
+
+- Image hover effects
+- Background blur
+- Modern UI polish
+- Creative visuals
+
+WHEN NOT TO USE
+===============
+
+- Heavy animations
+- Large images on low-end devices
