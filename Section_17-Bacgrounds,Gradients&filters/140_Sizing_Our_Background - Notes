@@ -83,7 +83,7 @@ Important:
 → cover does NOT disable repetition
 → Repetition usually becomes invisible
 
-Best practice:
+wBest practice:
 .box {
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +215,6 @@ background-position
 → controls PLACEMENT
 
 They work independently.
-
 
 
 BEST PRACTICE PATTERN
