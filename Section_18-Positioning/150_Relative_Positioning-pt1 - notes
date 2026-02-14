@@ -1,0 +1,140 @@
+========================================
+ position: relative
+========================================
+
+DEFINITION:
+
+position: relative; positions an element relative to its
+original (normal flow) position while still keeping it
+inside the normal document flow.
+
+
+----------------------------------------
+HOW POSITION: RELATIVE WORKS
+----------------------------------------
+
+1) The browser first places the element normally.
+2) Then it shifts the element visually using offset properties.
+3) The original space of the element is still reserved.
+
+
+----------------------------------------
+SYNTAX
+----------------------------------------
+
+selector {
+    position: relative;
+}
+
+
+----------------------------------------
+KEY CHARACTERISTICS
+----------------------------------------
+
+- Remains in normal document flow
+- Original space is preserved
+- Can be moved using:
+  top
+  left
+  right
+  bottom
+- z-index works
+- Can overlap other elements
+- Does NOT remove element from layout
+- Creates a positioning reference for absolute children
+
+
+----------------------------------------
+VERY IMPORTANT RULES
+----------------------------------------
+
+1) If no offset values are given,
+   it behaves exactly like position: static;
+
+2) Moving the element does NOT affect
+   the position of other elements.
+
+3) The empty space of its original position
+   still remains in the layout.
+
+4) z-index works only on positioned elements
+   (position must NOT be static).
+
+5) It creates a positioning context for
+   child elements with position: absolute.
+
+
+----------------------------------------
+OFFSET DIRECTION RULE
+----------------------------------------
+
+top: 20px;     -> moves element DOWN
+bottom: 20px;  -> moves element UP
+left: 20px;    -> moves element RIGHT
+right: 20px;   -> moves element LEFT
+
+
+----------------------------------------
+EXAMPLE
+----------------------------------------
+
+HTML:
+
+<div class="box">Relative Box</div>
+
+
+CSS:
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+
+----------------------------------------
+OUTPUT BEHAVIOR
+----------------------------------------
+
+- Box moves 20px down
+- Box moves 30px right
+- Original space remains
+- Other elements are not affected
+- Layout structure does not change
+
+
+----------------------------------------
+REAL-WORLD USAGE
+----------------------------------------
+
+- Small UI adjustments
+- Creating parent reference for absolute elements
+- Using z-index for layering
+- Adjusting icons, badges, labels
+- Overlapping elements intentionally
+
+
+----------------------------------------
+INTERVIEW ANSWER
+----------------------------------------
+
+Relative positioning moves an element relative to its
+original position while keeping it in normal document flow.
+Offset properties and z-index work, and the original space
+remains reserved.
+
+
+----------------------------------------
+SUMMARY
+----------------------------------------
+
+- Default behavior + manual shifting
+- Remains in normal flow
+- Space is preserved
+- Offset properties work
+- z-index works
+- Creates positioning context
+- Does not disturb surrounding layout
