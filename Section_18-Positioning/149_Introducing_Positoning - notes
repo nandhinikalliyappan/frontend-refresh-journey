@@ -1,0 +1,114 @@
+===============================
+CSS POSITIONING - NOTES
+===============================
+
+WHAT IS POSITIONING IN CSS?
+
+Positioning in CSS defines how an element is placed in the webpage layout.
+
+By default, all HTML elements follow normal document flow:
+- Block elements stack vertically
+- Inline elements appear side by side
+
+The "position" property changes how an element is placed.
+
+
+SYNTAX:
+
+selector {
+    position: value;
+}
+
+
+TYPES OF POSITION IN CSS:
+
+1. static
+2. relative
+3. absolute
+4. fixed
+5. sticky
+
+
+================================
+1) position: static
+================================
+
+WHAT IS STATIC?
+
+- Static is the default value of the position property.
+- Every HTML element is static by default.
+- If we do not specify position, it automatically uses:
+  position: static;
+
+
+KEY CHARACTERISTICS:
+
+- Default positioning
+- Follows normal document flow
+- Cannot be moved using top, left, right, or bottom
+- z-index does not work
+- No overlapping
+
+
+IMPORTANT RULE:
+
+If an element has:
+
+position: static;
+
+Then these properties will NOT work:
+
+top
+left
+right
+bottom
+z-index
+
+
+EXAMPLE:
+
+HTML:
+
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+
+
+CSS:
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    position: static;
+    top: 50px;   /* This will NOT work */
+}
+
+
+OUTPUT BEHAVIOR:
+
+- Box 1 appears first
+- Box 2 appears below it
+- top: 50px is ignored
+- Layout remains normal
+
+
+WHAT IS NORMAL DOCUMENT FLOW?
+
+Normal flow means:
+- Block elements appear one below another
+- Inline elements appear side by side
+- Elements do not overlap
+- No manual movement happens
+
+
+WHEN DO WE USE STATIC?
+
+- We usually do not manually use static.
+- It is mainly used to reset positioning.
+
