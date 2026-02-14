@@ -1,0 +1,135 @@
+========================================
+Z-INDEX IN CSS
+========================================
+
+DEFINITION:
+
+z-index controls the stacking order of elements
+along the Z-axis (front and back direction).
+
+It decides which element appears on top when
+elements overlap.
+
+
+----------------------------------------
+UNDERSTANDING THE Z-AXIS
+----------------------------------------
+
+X-axis -> left and right
+Y-axis -> top and bottom
+Z-axis -> front and back (layering)
+
+z-index works only when elements overlap.
+
+
+----------------------------------------
+HOW Z-INDEX WORKS
+----------------------------------------
+
+Higher z-index value  -> appears on top
+Lower z-index value   -> appears behind
+
+Example:
+z-index: 10;  appears above
+z-index: 1;   appears below
+
+
+----------------------------------------
+SYNTAX
+----------------------------------------
+
+selector {
+    position: relative;   /* or absolute, fixed, sticky */
+    z-index: 1;
+}
+
+
+----------------------------------------
+VERY IMPORTANT RULE
+----------------------------------------
+
+z-index works ONLY on positioned elements.
+
+Position must NOT be:
+    position: static;
+
+Position must be one of the following:
+    relative
+    absolute
+    fixed
+    sticky
+
+
+----------------------------------------
+DEFAULT VALUE
+----------------------------------------
+
+z-index: auto;
+
+If no z-index is specified:
+- Elements stack based on HTML order.
+- The element written later in HTML appears on top.
+
+
+----------------------------------------
+NEGATIVE Z-INDEX
+----------------------------------------
+
+z-index: -1;
+
+Moves the element behind other elements.
+
+Important:
+It can go behind its parent background.
+
+
+----------------------------------------
+KEY IMPORTANT POINTS
+----------------------------------------
+
+- Controls stacking order (front/back)
+- Works only on positioned elements
+- Higher value = appears above
+- Lower value = appears below
+- Default value is auto
+- Only visible when elements overlap
+
+
+----------------------------------------
+REAL-WORLD USAGE
+----------------------------------------
+
+- Modals
+- Dropdown menus
+- Fixed navigation bars
+- Tooltips
+- Image overlays
+- Overlapping cards
+
+
+----------------------------------------
+COMMON MISTAKES
+----------------------------------------
+
+- Using z-index without setting position
+- Using very large numbers unnecessarily
+- Not understanding stacking context
+
+
+----------------------------------------
+INTERVIEW ANSWER
+----------------------------------------
+
+z-index controls the stacking order of positioned
+elements along the Z-axis. Higher values appear
+above lower values when elements overlap.
+
+
+----------------------------------------
+SUMMARY
+----------------------------------------
+
+- Controls front-back layering
+- Works only with non-static positioning
+- Higher value appears on top
+- Default value is auto
