@@ -1,0 +1,72 @@
+========================================
+ABSOLUTE POSITIONING WITH top: 10px
+========================================
+
+In this example, .box2 has:
+
+    position: absolute;
+    top: 10px;
+
+When position: absolute is applied, .box2 is
+removed from the normal document flow.
+It no longer occupies space in the layout.
+
+Because of this, .box3 moves upward and takes
+the original space of .box2.
+
+Since no ancestor element has a positioned
+value (relative, absolute, fixed, or sticky),
+.box2 uses the initial containing block
+(viewport) as its reference.
+
+The property:
+
+    top: 10px;
+
+positions .box2 10 pixels from the top of
+the viewport, not from its original place
+inside the div.
+
+As a result:
+- .box2 shifts toward the top of the page
+- .box3 remains in normal flow
+- Overlapping occurs
+
+This behavior is expected when using
+position: absolute with offset values.
+========================================
+ABSOLUTE POSITIONING WITH top: 10px
+========================================
+
+In this example, .box2 has:
+
+    position: absolute;
+    top: 10px;
+
+When position: absolute is applied, .box2 is
+removed from the normal document flow.
+It no longer occupies space in the layout.
+
+Because of this, .box3 moves upward and takes
+the original space of .box2.
+
+Since no ancestor element has a positioned
+value (relative, absolute, fixed, or sticky),
+.box2 uses the initial containing block
+(viewport) as its reference.
+
+The property:
+
+    top: 10px;
+
+positions .box2 10 pixels from the top of
+the viewport, not from its original place
+inside the div.
+
+As a result:
+- .box2 shifts toward the top of the page
+- .box3 remains in normal flow
+- Overlapping occurs
+
+This behavior is expected when using
+position: absolute with offset values.
