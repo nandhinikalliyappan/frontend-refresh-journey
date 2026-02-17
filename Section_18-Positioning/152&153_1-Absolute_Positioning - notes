@@ -1,0 +1,227 @@
+========================================
+POSITION: ABSOLUTE IN CSS
+========================================
+
+DEFINITION:
+
+position: absolute removes an element from
+the normal document flow and positions it
+relative to its nearest positioned ancestor
+using top, right, bottom, and left.
+
+If no positioned ancestor exists, it positions
+relative to the initial containing block
+(viewport).
+
+
+----------------------------------------
+NORMAL DOCUMENT FLOW
+----------------------------------------
+
+By default:
+
+position: static;
+
+In normal flow:
+- Elements stack normally
+- Elements occupy space
+- Other elements respect their position
+
+When position: absolute is applied:
+- The element is removed from flow
+- It does NOT occupy space
+- Other elements behave as if it does not exist
+
+
+----------------------------------------
+CONTAINING BLOCK
+----------------------------------------
+
+An absolute element searches upward in the DOM
+for the nearest ancestor that has:
+
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+
+If found:
+    It positions relative to that ancestor.
+
+If NOT found:
+    It positions relative to the initial
+    containing block (viewport).
+
+
+----------------------------------------
+VIEWPORT VS ROOT ELEMENT
+----------------------------------------
+
+By default, absolute positioning does NOT use
+the <html> element.
+
+It uses the initial containing block,
+which behaves like the viewport.
+
+If you explicitly set:
+
+    html { position: relative; }
+
+Then it will position relative to <html>.
+
+
+----------------------------------------
+SYNTAX
+----------------------------------------
+
+selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+----------------------------------------
+POSITIONING PROPERTIES
+----------------------------------------
+
+top     -> distance from top
+right   -> distance from right
+bottom  -> distance from bottom
+left    -> distance from left
+
+These values are calculated from the
+containing block.
+
+
+----------------------------------------
+STRETCHING BEHAVIOR
+----------------------------------------
+
+If both left and right are set:
+
+    left: 0;
+    right: 0;
+
+The element stretches horizontally.
+
+If both top and bottom are set:
+
+    top: 0;
+    bottom: 0;
+
+The element stretches vertically.
+
+
+----------------------------------------
+CENTERING USING ABSOLUTE
+----------------------------------------
+
+To perfectly center:
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+This centers the element inside its
+positioned parent.
+
+
+----------------------------------------
+Z-INDEX WITH ABSOLUTE
+----------------------------------------
+
+Absolute elements can overlap.
+
+z-index controls which appears on top.
+
+Important:
+z-index works only if position is not static.
+
+
+----------------------------------------
+INTERACTION WITH PADDING
+----------------------------------------
+
+Absolute positioning respects the padding
+of the containing block.
+
+If parent has padding:
+    top: 0;
+
+Starts inside the padding area.
+
+
+----------------------------------------
+ABSOLUTE VS RELATIVE
+----------------------------------------
+
+Relative:
+- Stays in normal flow
+- Occupies space
+- Moves from its original position
+
+Absolute:
+- Removed from normal flow
+- Does not occupy space
+- Moves relative to positioned ancestor
+
+
+----------------------------------------
+ABSOLUTE VS FIXED
+----------------------------------------
+
+Absolute:
+- Uses positioned ancestor
+- If none → uses viewport
+- Scrolls with the page
+
+Fixed:
+- Always uses viewport
+- Does NOT scroll
+
+
+----------------------------------------
+COMMON MISTAKES
+----------------------------------------
+
+- Forgetting to set position: relative on parent
+- Thinking it always uses parent
+- Using it for full layout structure
+
+
+----------------------------------------
+REAL-WORLD USAGE
+----------------------------------------
+
+- Notification badges
+- Tooltips
+- Dropdown menus
+- Modal close buttons
+- Image overlays
+- Icons inside inputs
+
+
+----------------------------------------
+INTERVIEW ANSWER
+----------------------------------------
+
+position: absolute removes an element from
+the normal document flow and positions it
+relative to its nearest positioned ancestor.
+If none exists, it positions relative to
+the initial containing block (viewport).
+
+
+----------------------------------------
+SUMMARY
+----------------------------------------
+
+- Removed from normal flow
+- Does not occupy space
+- Uses nearest positioned ancestor
+- If none → uses viewport
+- Can overlap elements
+- Used for small UI positioning
+
+=======================================================================

@@ -1,0 +1,102 @@
+========================================
+ABSOLUTE POSITIONING – MY EXAMPLE
+========================================
+
+
+----------------------------------------
+WHAT I APPLIED
+----------------------------------------
+
+.box2{
+    position: absolute;
+}
+
+No top, left, right, or bottom values
+were given.
+
+
+----------------------------------------
+WHAT HAPPENS FIRST
+----------------------------------------
+
+When position: absolute is applied:
+
+- .box2 is removed from normal flow
+- It no longer occupies space
+- Other elements behave as if it does not exist
+
+
+----------------------------------------
+WHY BOX3 MOVED UP
+----------------------------------------
+
+Since .box2 is removed from flow:
+
+- The browser ignores its space
+- .box3 shifts upward
+- .box3 takes the place where .box2 originally was
+
+
+----------------------------------------
+WHY BOX2 LOOKS LIKE IT DID NOT MOVE
+----------------------------------------
+
+Even though .box2 is removed from flow:
+
+- No top or left values were given
+- So the browser keeps it at its original
+  static position visually
+
+It appears like it stayed in the same place,
+but actually it is floating.
+
+
+----------------------------------------
+WHY OVERLAPPING HAPPENS
+----------------------------------------
+
+Now two elements occupy the same vertical area:
+
+1) .box3 moved up
+2) .box2 is floating at its old position
+
+Since .box2 comes later in the HTML:
+
+- It is painted above .box3
+- Overlapping occurs
+
+So the yellow box overlaps the magenta box.
+
+
+----------------------------------------
+POSITIONING REFERENCE IN THIS EXAMPLE
+----------------------------------------
+
+The parent <div> has:
+
+    position: static; (default)
+
+Since no ancestor has:
+
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+
+.box2 uses the initial containing block
+(viewport/body) as reference.
+
+However, since no top/left is given,
+it remains at its original visual position.
+
+
+----------------------------------------
+FINAL RESULT
+----------------------------------------
+
+- .box2 is removed from normal flow
+- .box3 moves upward
+- .box2 stays visually in the same place
+- Overlapping happens
+- This is the expected behavior
+  of absolute positioning
