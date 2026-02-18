@@ -1,0 +1,114 @@
+========================================
+POSITION: FIXED (Complete Notes)
+========================================
+
+Definition:
+-----------
+position: fixed positions an element relative
+to the viewport (browser window).
+
+The element remains fixed in the same position
+even when the page is scrolled.
+
+----------------------------------------
+
+Key Characteristics:
+--------------------
+1. Removed from normal document flow.
+2. Does not occupy space in the layout.
+3. Positioned relative to the viewport.
+4. Does NOT move when scrolling.
+5. May overlap other elements.
+
+----------------------------------------
+
+How It Works:
+-------------
+When position: fixed is applied:
+
+    position: fixed;
+
+The element is taken out of the normal flow.
+Other elements behave as if it does not exist.
+
+Its position is controlled using:
+
+    top
+    right
+    bottom
+    left
+
+Example:
+
+    position: fixed;
+    top: 10px;
+    right: 20px;
+
+This places the element:
+- 10px from the top of the viewport
+- 20px from the right of the viewport
+
+----------------------------------------
+
+Important Behavior:
+-------------------
+
+1. Scroll Behavior
+   - The element does NOT move when the page scrolls.
+   - It stays fixed on the screen.
+
+2. Reference Point
+   - Always relative to the viewport.
+   - NOT relative to parent elements.
+
+3. Overlapping
+   - Since it is removed from flow,
+     other elements may move up.
+   - Overlapping can occur.
+
+----------------------------------------
+
+Difference from Absolute:
+--------------------------
+position: absolute
+- Positioned relative to nearest positioned ancestor.
+- Moves when the page scrolls.
+
+position: fixed
+- Positioned relative to viewport.
+- Does NOT move when scrolling.
+
+----------------------------------------
+
+Common Use Cases:
+-----------------
+- Navigation bars
+- Sticky headers
+- Floating action buttons
+- Chat icons
+- Back-to-top buttons
+- Popups / modals
+
+----------------------------------------
+
+Special Advanced Case:
+----------------------
+If a parent element has:
+
+    transform
+    filter
+    perspective
+
+That parent can create a new containing block.
+In that case, the fixed element may behave
+relative to that parent instead of viewport.
+
+(This is an advanced CSS concept.)
+
+----------------------------------------
+
+Interview One-Line Answer:
+---------------------------
+position: fixed positions an element relative
+to the viewport and keeps it fixed in place
+even when the page is scrolled.
