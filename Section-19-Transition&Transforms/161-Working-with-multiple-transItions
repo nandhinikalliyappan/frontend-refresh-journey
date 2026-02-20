@@ -1,0 +1,38 @@
+========================================
+MULTIPLE TRANSITIONS – SHORT NOTE
+========================================
+
+Definition:
+-----------
+Multiple transitions allow you to animate
+more than one CSS property at the same time.
+
+Syntax:
+-------
+
+transition: property1 duration timing-function delay,
+            property2 duration timing-function delay;
+
+
+Example Structure:
+------------------
+
+transition: background-color 0.5s ease,
+            transform 0.5s ease;
+
+
+Key Points:
+-----------
+
+• Separate each property using a comma (,).
+• Each property can have its own duration.
+• Each property can have its own timing-function.
+• Each property can have its own delay.
+• You can also use 'all' to animate all properties.
+
+
+Simple Meaning:
+---------------
+
+Multiple transitions = Smooth animation of
+multiple properties together.s
