@@ -1,0 +1,126 @@
+.btn1{
+ font-size: larger;   
+ margin: 20px;
+      transition: background-color, 3s;
+
+}
+
+.btn1:hover{
+    background-color: red;
+
+}
+
+.btn2{
+ font-size: larger;   
+ margin: 20px;
+      transition: background-color, 3s;
+
+}
+
+.btn2:hover{
+    background-color: red;
+
+}
+/*
+========================================
+WHY TRANSITION MUST BE IN NORMAL STATE
+========================================
+
+Correct Method:
+---------------
+
+button {
+    transition: background-color 3s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+What Happens Here:
+------------------
+
+• Transition is written in the normal state.
+• When you hover → color changes smoothly in 3 seconds.
+• When you remove hover → it changes back smoothly.
+
+✔ Smooth while going IN
+✔ Smooth while coming OUT
+
+This is the correct way.
+
+
+What Happens Internally:
+------------------------
+
+1. Page loads.
+2. Browser reads the button.
+3. It sees the transition property already defined.
+4. Browser prepares to animate future changes.
+5. When hover happens, background-color changes.
+6. Since transition is already present,
+   browser animates the change smoothly.
+7. When hover is removed, it animates smoothly again.
+
+Result:
+-------
+• Smooth while hovering.
+• Smooth while removing hover.
+• Works both directions.
+
+
+
+Incorrect Method:
+-----------------
+
+button {
+}
+
+button:hover {
+    background-color: red;
+    transition: background-color 3s;
+}
+
+
+What Happens Here:
+------------------
+
+• Transition is written inside :hover.
+• When you hover → color may change smoothly.
+• But when you remove hover → it changes back instantly.
+
+❌ Smooth only one side
+❌ Not smooth while coming back
+
+
+Reason:
+-------
+
+• Transition is applied at the same time the property changes.
+• The browser was not prepared for animation before the change.
+• When hover is removed, transition property is removed too.
+• So the element returns to its original state instantly.
+
+
+⚠ Problem:
+The browser sees the color change before it had transition ready.
+
+Transition works only when it is already present before the change happens.
+
+So the browser cannot animate properly in both directions.
+
+Core Concept:
+-------------
+
+Transition works only if it exists BEFORE
+the property change happens.
+
+
+Golden Rule:
+------------
+
+Always write transition in the normal state.
+Never write transition inside :hover.*/
+
+
