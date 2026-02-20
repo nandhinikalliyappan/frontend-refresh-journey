@@ -1,0 +1,58 @@
+========================================
+CSS TRANSITION – SYNTAX
+========================================
+
+Longhand Syntax
+----------------
+transition-property: ;
+transition-duration: ;
+transition-timing-function: ;
+transition-delay: ;
+
+
+Shorthand Syntax:
+-----------------
+transition: property duration timing-function delay;
+
+
+Explanation:
+------------
+
+1. transition-property
+   → Specifies which CSS property should animate.
+
+2. transition-duration
+   → Specifies how long the transition takes.
+   → (Required for transition to work)
+
+3. transition-timing-function
+   → Specifies the speed curve of the transition.
+   → Example values: ease, linear, ease-in, ease-out, ease-in-out
+
+4. transition-delay
+   → Specifies how long to wait before starting the transition.
+
+
+Order of Values:
+----------------
+
+1. property          → Which CSS property to animate
+2. duration          → How long the animation takes
+3. timing-function   → Speed pattern of animation
+4. delay             → When the animation should start
+
+
+Example Structure:
+------------------
+
+transition: background-color 0.5s ease 0s;
+
+
+Important Notes:
+----------------
+
+• Duration is mandatory.
+• If duration is not given, transition will not work.
+• Delay is optional.
+• Timing-function is optional.
+• Property can be specific (like width, color) or 'all'.
