@@ -1,0 +1,204 @@
+========================================
+CSS POSITIONING (Complete Notes)
+========================================
+
+Definition:
+-----------
+Positioning in CSS defines how an element is
+placed in the webpage layout and how it behaves
+relative to the normal document flow, parent
+elements, or the viewport.
+
+There are five types of positioning:
+
+1. static
+2. relative
+3. absolute
+4. fixed
+5. sticky
+
+========================================
+POSITION: STATIC
+========================================
+
+Definition:
+-----------
+position: static is the default positioning
+value of all HTML elements.
+
+----------------------------------------
+
+Key Characteristics:
+--------------------
+1. Follows normal document flow.
+2. Occupies its natural space.
+3. Offset properties (top, right, bottom, left)
+   do NOT work.
+4. Cannot be repositioned using offsets.
+
+----------------------------------------
+
+How It Works:
+-------------
+Elements appear in the order they are written.
+
+Block elements:
+- Take full width
+- Stack vertically
+
+Inline elements:
+- Take required width
+- Sit horizontally
+
+----------------------------------------
+
+Interview One-Line Answer:
+---------------------------
+position: static is the default value that
+follows the normal document flow and does
+not respond to offset properties.
+
+========================================
+POSITION: RELATIVE
+========================================
+
+Definition:
+-----------
+position: relative positions an element
+relative to its original position in
+the normal document flow.
+
+----------------------------------------
+
+Key Characteristics:
+--------------------
+1. Remains in normal flow.
+2. Keeps its original space.
+3. Can be moved using top, right, bottom, left.
+4. Creates a positioning context for
+   absolutely positioned children.
+
+----------------------------------------
+
+How It Works:
+-------------
+The element is first placed normally.
+Then movement happens from that position.
+
+Example:
+
+    position: relative;
+    top: 20px;
+    left: 10px;
+
+This moves the element:
+- 20px downward
+- 10px to the right
+
+Other elements do NOT occupy its space.
+
+----------------------------------------
+
+Interview One-Line Answer:
+---------------------------
+position: relative moves an element from
+its original position while keeping its
+space in the normal document flow.
+
+========================================
+POSITION: ABSOLUTE
+========================================
+
+Definition:
+-----------
+position: absolute removes the element
+from the normal document flow and positions
+it relative to the nearest positioned ancestor.
+
+----------------------------------------
+
+Key Characteristics:
+--------------------
+1. Removed from normal flow.
+2. Does NOT keep its original space.
+3. Other elements behave as if it does not exist.
+4. Positioned relative to the nearest ancestor
+   with position other than static.
+5. If no positioned ancestor exists,
+   it positions relative to the
+   Initial Containing Block.
+
+----------------------------------------
+
+How It Works:
+-------------
+Example:
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+The element will attach to the top-right
+corner of its nearest positioned parent.
+
+If no such parent exists,
+it attaches to the Initial Containing Block.
+
+----------------------------------------
+
+Difference from Fixed:
+-----------------------
+- Absolute scrolls with the page.
+- Fixed does NOT scroll.
+
+----------------------------------------
+
+Interview One-Line Answer:
+---------------------------
+position: absolute removes the element
+from normal flow and positions it relative
+to the nearest positioned ancestor.
+
+========================================
+POSITION: FIXED
+========================================
+
+Definition:
+-----------
+position: fixed positions an element relative
+to the viewport (browser window).
+
+The element remains fixed in the same position
+even when the page is scrolled.
+
+----------------------------------------
+
+Key Characteristics:
+--------------------
+1. Removed from normal document flow.
+2. Does not occupy space in the layout.
+3. Positioned relative to the viewport.
+4. Does NOT move when scrolling.
+5. May overlap other elements.
+
+----------------------------------------
+
+How It Works:
+-------------
+Example:
+
+    position: fixed;
+    top: 10px;
+    right: 20px;
+
+This places the element:
+- 10px from the top of the viewport
+- 20px from the right of the viewport
+
+----------------------------------------
+
+Interview One-Line Answer:
+---------------------------
+position: fixed positions an element
+relative to the viewport and keeps it
+fixed even when scrolling.
