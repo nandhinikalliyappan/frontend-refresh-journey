@@ -1,0 +1,56 @@
+========================================
+CSS TRANSITION – INTRODUCTION
+========================================
+
+Definition:
+-----------
+A CSS Transition is used to make a property
+change smoothly over a period of time instead
+of changing instantly.
+
+It creates a smooth effect between:
+1. Initial state
+2. Final state
+
+
+Why We Use Transition:
+----------------------
+Normally, CSS property changes happen instantly.
+Transition makes the change:
+
+• Smooth
+• Gradual
+• Visually appealing
+• Better for user experience
+
+
+When Transition Works:
+-----------------------
+Transition works when a property value changes,
+such as:
+
+• Hover state (:hover)
+• Focus state (:focus)
+• Active state (:active)
+• When a class is added or removed
+
+
+What Transition Controls:
+--------------------------
+1. Which property should animate
+2. How long the animation takes
+3. The speed pattern of animation
+4. When the animation should start
+
+
+Important Points:
+-----------------
+• Transition needs a property change.
+• Transition needs a duration.
+• Without duration, it will NOT work.
+• It only works on animatable properties.
+
+
+Simple Meaning:
+---------------
+Transition = Smooth change between two states.
