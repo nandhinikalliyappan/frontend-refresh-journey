@@ -1,0 +1,213 @@
+========================================
+TRANSITION-TIMING-FUNCTION – COMPLETE NOTES
+========================================
+
+Definition:
+-----------
+transition-timing-function controls how the
+speed changes during a transition.
+
+It defines the acceleration curve of the animation.
+
+It does NOT control:
+• Duration
+• Delay
+• Start value
+• End value
+
+It controls only the speed pattern between
+the start and end values.
+
+--------------------------------------------------
+
+How It Works:
+-------------
+When a property changes:
+
+Start Value  →  End Value
+
+The browser:
+• Creates a timeline (0% → 100%)
+• Calculates intermediate values
+• Updates the property gradually (frame by frame)
+
+The timing function decides how fast or slow
+the property changes during that time.
+
+--------------------------------------------------
+
+Default Value:
+--------------
+ease
+
+If not specified, the browser automatically
+applies 'ease'.
+
+--------------------------------------------------
+
+Syntax:
+-------
+
+transition-timing-function: value;
+
+OR (shorthand)
+
+transition: property duration timing-function delay;
+
+Order in shorthand:
+transition: property duration timing-function delay;
+
+--------------------------------------------------
+
+Types of Timing Functions:
+--------------------------
+
+1) linear
+----------
+transition-timing-function: linear;
+
+• Constant speed
+• No acceleration
+• No deceleration
+• 50% time = 50% progress
+
+Best for:
+• Progress bars
+• Continuous mechanical movement
+
+--------------------------------------------------
+
+2) ease (default)
+-----------------
+transition-timing-function: ease;
+
+• Slow start
+• Fast middle
+• Slow end
+• Natural looking animation
+
+--------------------------------------------------
+
+3) ease-in
+-----------
+transition-timing-function: ease-in;
+
+• Starts slow
+• Speeds up at the end
+• Feels like acceleration
+
+--------------------------------------------------
+
+4) ease-out
+------------
+transition-timing-function: ease-out;
+
+• Starts fast
+• Slows down at the end
+• Feels like braking
+
+--------------------------------------------------
+
+5) ease-in-out
+---------------
+transition-timing-function: ease-in-out;
+
+• Slow start
+• Fast middle
+• Slow end
+• Smooth and balanced motion
+
+--------------------------------------------------
+
+6) cubic-bezier()
+------------------
+transition-timing-function: cubic-bezier(x1, y1, x2, y2);
+
+• Custom speed curve
+• Full control over acceleration
+• Used for advanced UI animations
+• Can create bounce or elastic effects
+
+--------------------------------------------------
+
+7) steps()
+-----------
+transition-timing-function: steps(n);
+
+Example:
+transition-timing-function: steps(4);
+
+• No smooth animation
+• Moves in fixed jumps
+• Divides transition into equal steps
+
+Used for:
+• Sprite animation
+• Frame-based effects
+• Typing effects
+
+Optional:
+steps(4, start)
+steps(4, end)
+
+--------------------------------------------------
+
+Important Rule:
+---------------
+Always define transition on the base element,
+not inside :hover.
+
+Wrong:
+
+button:hover {
+  transition: 0.5s ease;
+}
+
+Correct:
+
+button {
+  transition: 0.5s ease;
+}
+
+If written inside :hover, the transition
+disappears when hover is removed.
+
+--------------------------------------------------
+
+Multiple Timing Functions:
+---------------------------
+Different properties can use different
+timing functions.
+
+Example:
+
+transition:
+  width 0.5s ease-in,
+  background-color 0.5s linear;
+
+Each property can have:
+• Its own duration
+• Its own timing-function
+• Its own delay
+
+--------------------------------------------------
+
+Professional Usage Guide:
+--------------------------
+• Button hover → ease-in-out
+• Modal open → ease-out
+• Slide menu → ease-out
+• Progress bar → linear
+• Natural UI animations → ease
+
+--------------------------------------------------
+
+Final Summary:
+--------------
+transition-timing-function defines the
+acceleration curve that controls how
+intermediate values are calculated
+during a CSS transition.
+
+It affects only the speed pattern,
+not duration, delay, or values.
